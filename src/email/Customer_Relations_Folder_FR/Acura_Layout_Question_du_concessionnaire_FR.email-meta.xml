@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Acura Layout - Question du concessionnaire - FR</name>
+    <style>none</style>
+    <subject>Question du concessionnaire</subject>
+    <textOnly>Question du concessionnaire 
+
+Merci de votre demande. Veuillez considérer ce message comme une confirmation de réception.
+
+Dans le but d’assurer un temps de traitement rapide, veuillez examiner les renseignements à fournir suivants qui sont requis pour la plupart des demandes. 
+
+Renseignements généraux (requis pour la plupart des types de demandes) :
+- NIV
+- Nom du client - Nom de la personne faisant la deman
+de (prénom et nom) 
+- Rôle au sein de l’établissement
+- Nature de la réparation
+- Kilométrage
+- Numéro de bon de réparation (nº de BR) 
+
+Si vous demandez une location, veuillez également inclure : 
+- Nombre de journées de location demandées
+- Taux quotidien pour la location (excluant les taxes et les assurances) 
+
+Si la demande de location est faite en raison d’une pièce en souffrance, veuillez inclure : 
+- Numéro de la pièce
+- Numéro de la commande de la pièce
+- Date à laquelle la pièce a été commandée
+- Date à laquelle la commande en souffrance critique a été passée
+- Numéro de référence de la commande en souffrance critique
+- Date prévue de la livraison de la commande en souffrance critique (date prévue de livraison) 
+
+Si vous faites une demande de bienveillance, veuillez inclure : 
+- Numéro(s) de pièce(s) 
+- Temps de main-d’œuvre
+- Taux de main-d’œuvre
+- Estimation au détail
+- Intentions de bienveillance du concessionnaire
+- Dépenses du client à votre établissement
+- Propriétaires précédents
+- Service de réparation/maintenance connexe ou défaut de fabrication? 
+- Cause fondamentale
+- Photos (le cas échéant) 
+- Dossiers de service (le cas échéant) 
+
+Si vous souhaitez ajouter tout autre renseignement à votre courriel initial, veuillez répondre à ce message et votre cas sera mis à jour en conséquence. 
+
+Votre demande sera examinée et on y répondra dans un délai d’un jour ouvrable. S’il manque quelque renseignement que ce soit à votre demande, nous vous en informerons par courriel et attendrons davantage de clarification. 
+
+Passez une excellente journée! 
+
+Vos partenaires de l’équipe des relations avec la clientèle de Honda Canada
+
+************************************************************************
+Privacy Policy | Terms &amp; Conditions | Contact Us	
+ 
+This is a system email account, and unfortunately, replies to this email cannot be acknowledged. If you have any questions or comments please follow this Contact Us link: http://acura.ca/contact_us
+
+At Acura, we hold your personal information in strictest confidence, in accordance with federal and provincial guidelines. For further details on Acura&apos;s Customer Privacy Policy, please visit our Privacy Policy Guidelines (http://acura.ca/privacy).
+
+You are receiving this email because you have asked us to notify you about Acura products and promotions. You are subscribed as {!EmailMessage.ToAddress}. To unsubscribe, please follow this Unsubscribe link: http://acura.ca/unsubscribe
+
+© {!YEAR(TODAY())} Acura Canada. 180 Honda Boulevard, Markham, ON, L6C 0H9, 1-888-922-8729 
+
+All information contained herein applies to Canadian products only.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

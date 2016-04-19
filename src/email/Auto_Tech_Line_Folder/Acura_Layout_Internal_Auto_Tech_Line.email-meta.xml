@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Acura Layout - Internal - Auto Tech Line</name>
+    <style>none</style>
+    <subject>Auto Tech Line</subject>
+    <textOnly>Auto Tech Line 
+
+Please be advised that an &quot;A&quot; Rank case has been set up by Techline. 
+
+Case #: {!Case.CaseNumber} 
+VIN/Serial #: {!Case.Subject_VIN_Serial__c} 
+The case involves: 
+Tech Line file #: {!Case.Tech_Line_File_No__c} 
+Root Cause: {!Case.Root_Cause__c} 
+Cause Status: {!Case.Status} 
+
+************************************************************************
+Privacy Policy | Terms &amp; Conditions | Contact Us	
+ 
+This is a system email account, and unfortunately, replies to this email cannot be acknowledged. If you have any questions or comments please follow this Contact Us link: http://acura.ca/contact_us
+
+At Acura, we hold your personal information in strictest confidence, in accordance with federal and provincial guidelines. For further details on Acura&apos;s Customer Privacy Policy, please visit our Privacy Policy Guidelines (http://acura.ca/privacy).
+
+© {!YEAR(TODAY())} Acura Canada. 180 Honda Boulevard, Markham, ON, L6C 0H9, 1-888-922-8729 
+
+All information contained herein applies to Canadian products only.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

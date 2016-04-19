@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>PIN</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>PIN</value>
+    </caseValues>
+    <fields>
+        <label><!-- Adjusted End Date --></label>
+        <name>Adjusted_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign Brand --></label>
+        <name>Campaign_Brand__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign End Date --></label>
+        <name>Campaign_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign Name --></label>
+        <name>Campaign_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign Start Date --></label>
+        <name>Campaign_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign --></label>
+        <name>Campaign__c</name>
+        <relationshipLabel><!-- PIN --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer Company --></label>
+        <name>Customer_Company__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer --></label>
+        <name>Customer__c</name>
+        <relationshipLabel><!-- PIN --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Dealer Code --></label>
+        <name>Dealer_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer --></label>
+        <name>Dealer__c</name>
+        <relationshipLabel><!-- PIN --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Model Group --></label>
+        <name>Model_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model Year --></label>
+        <name>Model_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- PIN Expiry --></label>
+        <name>PIN_Expiry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pin Code --></label>
+        <name>Pin_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Redeemed Date --></label>
+        <name>Redeemed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation><!-- Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redeemed</masterLabel>
+            <translation><!-- Redeemed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VIN --></label>
+        <name>VIN_Serial_Number__c</name>
+        <relationshipLabel><!-- PIN --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- VIN/Serial # --></label>
+        <name>VIN_Serial__c</name>
+    </fields>
+    <layouts>
+        <layout>PIN Layout</layout>
+        <sections>
+            <label><!-- Campaign Details --></label>
+            <section>Campaign Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Details --></label>
+            <section>Customer Details</section>
+        </sections>
+        <sections>
+            <label><!-- Dealer Details --></label>
+            <section>Dealer Details</section>
+        </sections>
+        <sections>
+            <label><!-- VIN Details --></label>
+            <section>VIN Details</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

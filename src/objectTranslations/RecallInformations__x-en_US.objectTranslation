@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Recall &amp; Product Update Information</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Recall &amp; Product Update Information</value>
+    </caseValues>
+    <fields>
+        <label><!-- Campaign Code --></label>
+        <name>CmpgnCd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign Created Date --></label>
+        <name>CmpgnCrtDt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign English Description --></label>
+        <name>CmpgnEnglshDesc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign French Description --></label>
+        <name>CmpgnFrnchDesc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign Type Code --></label>
+        <name>CmpgnTypCd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Link to Customer --></label>
+        <name>MdmUcid__c</name>
+        <relationshipLabel><!-- Recall &amp; Product Update Information --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- RecallCmpgnDtlId --></label>
+        <name>RecallCmpgnDtlId__c</name>
+    </fields>
+    <fields>
+        <label><!-- VIN / Serial # --></label>
+        <name>Vin__c</name>
+        <relationshipLabel><!-- Recall &amp; Product Update Information --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>RecallInformations Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

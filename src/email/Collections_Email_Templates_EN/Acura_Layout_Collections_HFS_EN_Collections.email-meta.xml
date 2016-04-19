@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Acura Layout - Collections - HFS - EN</name>
+    <style>none</style>
+    <subject>SUBJECT HERE</subject>
+    <textOnly>[TITLE GOES HERE]  
+
+ [EMAIL BODY GOES HERE] 
+
+ Best regards,
+
+ Collections &amp; Recovery Centre
+ Honda Financial Services
+ T: 1-800-387-6141| F: 1-800-210-6653 (QC: 1-877-6414179)
+ Monday - Friday 8am-8pm EST
+ hfs_collections@ch.honda.com 
+
+ Please visit our owners&apos; website at www.myhonda.ca or www.myacura.ca, click on “MyFinance” to register and access your account online.
+ __________________________
+
+ This transmission (including attachments, if any) is confidential and may be privileged. It is intended only for the person(s) named above. Any other distribution, copying or disclosure whatsoever is STRICTLY PROHIBITED. If you have received this e-mail in error, please delete it and any attachments from your computer system and records.
+
+ Ce message (et les pièces qui y sont jointes, le cas échéant) est confidentiel et peut contenir des renseignements privilégiés. Il est destiné à l&apos;intention exclusive de la (des) personne(s) nommée(s) ci-dessus. Toute autre distribution, copie ou divulgation quelconque est STRICTEMENT INTERDITE. Si vous avez reçu ce message par erreur, veuillez éliminer ce message, ainsi que les pièces jointes, de votre système informatique et de vos dossiers.
+
+
+***********************************************************************
+Privacy Policy | Terms &amp; Conditions | Contact Us 
+
+This is a system email account, and unfortunately, replies to this email cannot be acknowledged. If you have any questions or comments please follow this Contact Us link: http://acura.ca/contact_us 
+
+At Acura, we hold your personal information in strictest confidence, in accordance with federal and provincial guidelines. For further details on Acura&apos;s Customer Privacy Policy, please visit our Privacy Policy Guidelines (http://acura.ca/privacy).
+
+You are receiving this email because you have asked us to notify you about Acura products and promotions. You are subscribed as {!EmailMessage.ToAddress}. To unsubscribe, please follow this Unsubscribe link: http://acura.ca/unsubscribe 
+
+© {!YEAR(TODAY())} Acura Canada. 180 Honda Boulevard, Markham, ON, L6C 0H9, 1-888-922-8729
+
+All information contained herein applies to Canadian products only.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

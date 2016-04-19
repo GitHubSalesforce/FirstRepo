@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This is populated by ODS batch delta loads.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Air_Condition__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Air Condition</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Body_Type__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Body Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cylinders__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Cylinders</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Door_Type__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Door Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Drive_Train__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Drive Train</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Immobilizer_Indicator__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Immobilizer Indicator</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MDL_YR_CD__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>MDL_YR_CD
+Model Year + Model Code to provide a unique identifier for the external system that is loading.</description>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>MDL YR CD</label>
+        <length>255</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Model_Code__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Model Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Model_Grade_Code__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Model Grade Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Model_Group_Code__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Model Group Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Model_Group__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Model Group</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Model_Year__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Model Year</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Motive_Power__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Motive Power</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Line__c</fullName>
+        <description>A   = Honda 
+C   = Acura 
+M  = Motorcycle 
+P  = Power Equipment</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A   = Honda 
+C   = Acura 
+M  = Motorcycle 
+P  = Power Equipment</inlineHelpText>
+        <label>Product Line (ODS)</label>
+        <picklist>
+            <picklistValues>
+                <fullName>A</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>M</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>P</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Product_Line_frontend__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>CASE(Product_Line__c,
+&apos;A&apos;,
+&apos;Honda&apos;,
+&apos;C&apos;,
+&apos;Acura&apos;,
+&apos;M&apos;,
+&apos;Motorcycle&apos;,
+&apos;P&apos;,
+&apos;Power Equipment&apos;,
+&apos;Unknown&apos;)</formula>
+        <label>Product Line</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Telematic_Flag__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Telematic Flag</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Transmission_Speed__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Transmission Speed</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Wheelbase__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Wheelbase</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>XMITN_Code__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>XMITN Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>XM_Radio__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>XM Radio</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Product</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Product_Line_frontend__c</columns>
+        <columns>MDL_YR_CD__c</columns>
+        <columns>Model_Year__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>PR-{0000}</displayFormat>
+        <label>Product Ref</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Products</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>Model_Year__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Product_Line_frontend__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Model_Group__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Door_Type__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Model_Year__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Product_Line_frontend__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Model_Group__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Door_Type__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Acura Layout - Manual Extension - Sent to Dealer - HFS - FR</name>
+    <style>none</style>
+    <subject>Documents de prolongation de bail pour (NOM DU CLIENT/DE LA CLIENTE)</subject>
+    <textOnly>Documents de prolongation de bail pour (NOM DU CLIENT/DE LA CLIENTE) 
+
+ PRIVÉ &amp; CONFIDENTIEL
+
+ À qui de droit,
+
+ Veuillez trouver ci-joint le document de prolongation de bail de notre (nos) client(e)(s), protégé par un mot de passe (votre code de concessionnaire à 4 chiffres).
+
+ Veuillez noter que :
+
+- Il faut nous faire parvenir par télécopieur ou par courriel le document de prolongation de bail dûment signé d’ici 10 jours ouvrables
+- Tout amendement ou toute modification ne sera pas accepté sur le contrat, sauf un changement d’adresse
+- Seul la(les) signature(s) du(de la)(des) client(e)(s) sera(ont) acceptée(s) (le concessionnaire ne signe pas l’accord)
+- Pour les prolongations de bail d’entreprise la section « Nom et Titre du Signataire Autorisé » doit être remplie
+ - Le (la) (les) client(e)(s) est responsable de tous les paiements de prolongation de bail (sauf indication contraire)
+- Tout retard dans la réception du document dûment signé pourrait affecter le bureau de crédit de notre (nos) client(e)(s), de façon négative, si la date d’échéance originale a déjà dépassée.
+
+ Cordialement,
+
+
+ Centre de Fidélité &amp; Renouvellement
+ Services Financiers Honda
+ T: 1-800-387-5399 x7529 | F: 1-888-254-8875
+ lundi – vendredi 8h-20h HNE
+ crc@ch.honda.com 
+
+ Visitez notre site Web au www.myhonda.ca ou www.myacura.ca pour vous inscrire et avoir accès à votre compte en ligne dans la section « Mon Financement ».
+ __________________________
+
+Ce message (et les pièces qui y sont jointes, le cas échéant) est confidentiel et peut contenir des renseignements privilégiés. Il est destiné à l&apos;intention exclusive de la (des) personne(s) nommée(s) ci-dessus. Toute autre distribution, copie ou divulgation quelconque est STRICTEMENT INTERDITE. Si vous avez reçu ce message par erreur, veuillez éliminer ce message, ainsi que les pièces jointes, de votre système informatique et de vos dossiers.
+
+ This transmission (including attachments, if any) is confidential and may be privileged. It is intended only for the person(s) named above. Any other distribution, copying or disclosure whatsoever is STRICTLY PROHIBITED. If you have received this e-mail in error, please delete it and any attachments from your computer system and records.
+
+
+***********************************************************************
+Politique de confidentialité | Conditions | Contactez-nous
+
+Ce courriel est généré par un système automatisé qui ne peut malheureusement pas procurer de réponse, ni d’accusé de réception. Si vous avez des questions ou des commentaires, veuillez suivre le lien Contactez-nous: http://acura.ca/contact_us.
+
+Acura conserve vos renseignements personnels dans la plus stricte confidentialité, conformément aux directives fédérales et provinciales en vigueur. Pour de plus amples détails sur la Politique d&apos;Acura concernant la protection de la vie privée de la clientèle, veuillez consulter les lignes directrices concernant notre Politique de confidentialité: http://acura.ca/privacy. 
+
+Vous avez reçu ce courriel parce que vous nous avez demandé d&apos;être informé sur les produits Acura ou lors de promotions spéciales. Vous êtes inscrit avec l&apos;adresse {!EmailMessage.ToAddress}. Pour vous désabonner, veuillez cliquer sur le lien Désabonner: http://acura.ca/unsubscribe .
+
+© {!YEAR(TODAY())} Acura Canada. 180, boulevard Honda, Markham (Ontario) L6C 0H9, 1-888-922-8729 
+
+Toute l&apos;information contenue dans ce courriel s&apos;applique uniquement aux véhicules canadiens.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

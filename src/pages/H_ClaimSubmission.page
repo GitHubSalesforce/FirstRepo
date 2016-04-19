@@ -1,0 +1,285 @@
+<apex:page showHeader="false" sidebar="false" docType="html-5.0" controller="H_ClaimSubmissionController" standardStylesheets="false">
+    <apex:stylesheet value="{!URLFOR($Resource.ACM_Styles, 'styles/styles.css')}" />
+    
+    <apex:form id="form">
+
+        <div class="center-claim pin-div-form claim-header-div">
+            <div class="logo-div">
+                
+                <apex:image url="{!URLFOR($Resource.ACM_Assets, 'acura_logo_white.png')}" width="125"/>
+                
+                    
+                    <div class="language-div">
+                        <apex:commandLink styleClass="update-language-link" value="{!$Label.ACM_English}" action="{!updateLanguage}" rendered="{!portalUser.LanguageLocaleKey == 'fr'}" oncomplete="location.reload()"/>
+                        <apex:outputLabel styleClass="current-language-label" value="{!$Label.ACM_English}" rendered="{!portalUser.LanguageLocaleKey != 'fr'}"/>
+                        /<apex:commandLink styleClass="update-language-link" value="{!$Label.ACM_French}" action="{!updateLanguage}" rendered="{!portalUser.LanguageLocaleKey != 'fr'}" oncomplete="location.reload()"/>
+                        <apex:outputLabel styleClass="current-language-label" value="{!$Label.ACM_French}" rendered="{!portalUser.LanguageLocaleKey == 'fr'}"/>
+                        <br/>
+                        <apex:outputLabel styleClass="logo-title logo-acura acm-site-title" value="{!$Label.ACM_Website_Name}"/>
+                    </div>
+                    
+                    
+            </div>
+            <div class="">
+                <apex:image styleClass="acm-logo-image" url="{!URLFOR($Resource.ACM_Assets, 'RLX_logo.jpg')}" width="820px"/>
+            </div>
+            
+        </div>
+
+        <div class="claim-form-body">
+            <apex:outputPanel id="claimTitle" layout="block">
+
+            
+                <apex:outputLabel id="serviceDetailsLabel" styleClass="service-details" value="{!$Label.ACM_Service_Details}" rendered="{!isClaimSubmitted == false}"/>
+                <apex:outputLabel id="submissionDetailsLabel" styleClass="service-details" value="{!$Label.ACM_Submission_Details}" rendered="{!isClaimSubmitted}"/>
+                
+            </apex:outputPanel>
+            
+            <br/>
+
+            <apex:outputPanel layout="block" id="claimForm">
+                <apex:outputPanel layout="block" rendered="{!isClaimSubmitted == false}">
+                    <div class="info-labels-div">
+                        <apex:outputLabel id="dealerLabel" styleClass="info-label" value="{!$Label.ACM_Dealer}"/>:
+                        {!dealerName}
+                        
+                    </div>
+                    <apex:outputPanel layout="block" styleClass="error-block" id="errorMessages">
+
+                        <apex:outputLabel styleClass="error-message" value="{!$Label.ACM_Invalid_VIN}" rendered="{!isValidVin == false}"/>
+                        <br/>
+                        <apex:outputLabel styleClass="error-message" value="{!$Label.ACM_Invalid_VIN}" rendered="{!isVinApplicable == false}"/>
+                        <br/>
+
+                        <apex:outputLabel styleClass="error-message" value="{!$Label.ACM_Invalid_RO}" rendered="{!isValidRO == false}"/>
+                        <br/>
+                        <apex:outputLabel styleClass="error-message" value="{!$Label.ACM_Main_Symbol_Required}" rendered="{!isMainSymbolNotNull == false}"/>
+                        
+                        <apex:outputLabel styleClass="error-message" value="{!alreadySubmittedClaimLabel}" rendered="{!isNewClaim == false}"/>
+
+                        <apex:outputLabel styleClass="error-message" value="{!$Label.ACM_Invalid_Symbols_Error}" rendered="{!isSymbolSelectedValid == false}"/>
+                    </apex:outputPanel>
+
+            
+                    <table class="claim-form-detail" align="center">
+                        <tr>
+                            <td>
+                                <apex:outputLabel value="{!$Label.ACM_Enter_VIN}"/>
+
+                            </td>
+                            <td>
+                                <apex:input styleClass="claim-detail-input" value="{!vinCode}"/>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <apex:outputLabel value="{!$Label.ACM_RO_Number}"/>
+                            </td>
+                            <td>
+                                <apex:input styleClass="claim-detail-input" value="{!roNumber}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="claim-button-column">
+                                <apex:commandButton styleClass="claim-button" reRender="modelOutputPanel, errorMessages" action="{!populateModelInput}" value="{!$Label.ACM_OK}" status="modelStatus"/>
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <apex:outputLabel value="{!$Label.ACM_Model}"/>
+                            </td>
+                            <td>
+                                <apex:outputPanel layout="block" id="modelOutputPanel">
+                                    <apex:input styleClass="claim-detail-input" value="{!model}" disabled="true"/>
+                                </apex:outputPanel>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <apex:outputLabel value="{!$Label.ACM_Main_Symbol}"/>*
+                            </td>
+                            <td>
+                                <apex:selectList styleClass="picklist-symbols" id="mainSymbols" value="{!selectedMainSymbol}"
+                                         size="1" required="true">
+                                  <apex:selectOptions value="{!mainSymbols}"/>
+                                </apex:selectList>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <apex:outputLabel value="{!$Label.ACM_1st_Sub_Symbol}"/>
+                            </td>
+                            <td>
+                                <apex:selectList styleClass="picklist-symbols" id="firstSubSymbols" value="{!selected1stSubSymbol}"
+                                         size="1" required="true">
+                                  <apex:selectOptions value="{!subSymbols}"/>
+                                </apex:selectList>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <apex:outputLabel value="{!$Label.ACM_2nd_Sub_Symbol}"/>
+                            </td>
+                            <td>
+                                <apex:selectList styleClass="picklist-symbols" id="secondSubSymbols" value="{!selected2ndSubSymbol}"
+                                         size="1" required="true">
+                                  <apex:selectOptions value="{!subSymbols}"/>
+                                </apex:selectList>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <apex:outputLabel value="{!$Label.ACM_3rd_Sub_Symbol}"/>
+                            </td>
+                            <td>
+                                <apex:selectList styleClass="picklist-symbols" id="thirdSubSymbols" value="{!selected3rdSubSymbol}"
+                                         size="1" required="true">
+                                  <apex:selectOptions value="{!subSymbols}"/>
+                                </apex:selectList>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                               
+                            
+                            </td>
+                            
+                            <td class="claim-button-column">
+                                <apex:commandLink value="{!$Label.ACM_View_Reports}" onclick="window.open('/00O')"/>
+                                &nbsp; &nbsp;
+                                <apex:commandButton styleClass="claim-button" reRender="claimSummary, claimForm, claimTitle, errorMessages" action="{!submitClaim}" value="{!$Label.ACM_Submit}" status="submitStatus"/>
+                            
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                
+                            </td>
+                            
+                            <td class="claim-button-column">
+                                
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </apex:outputPanel>
+                
+            </apex:outputPanel>
+            <apex:outputPanel id="successClaimMessage" >
+                <apex:outputLabel styleClass="success-message" value="{!successfullySubmittedClaimLabel}" rendered="{!isClaimInserted}"/>
+                <br/>
+                <br/>
+            </apex:outputPanel>
+            <apex:outputPanel layout="block" id="claimSummary" >
+                <apex:outputPanel layout="block" rendered="{!isClaimSubmitted}">
+
+                    <table class="claim-form-summary" align="center">
+                        <tr>
+                            <td>
+                                <apex:outputLabel id="dealerLabelSummary" styleClass="info-label" value="{!$Label.ACM_Dealer}"/>
+                                
+
+                            </td>
+                            <td>
+                                <apex:outputText styleClass="claim-detail-input" value="{!portalUser.Name}"/>
+                            </td>
+
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <apex:outputLabel styleClass="info-label" value="{!$Label.ACM_Model}"/>
+                            </td>
+                            <td>
+                                <apex:outputText styleClass="claim-detail-input" value="{!model}"/>
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td>
+                                <apex:outputLabel styleClass="info-label" value="{!$Label.ACM_Enter_VIN}"/>
+                            </td>
+                            <td>
+                                <apex:outputText styleClass="claim-detail-input" value="{!vinCode}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <apex:outputLabel styleClass="info-label" value="{!$Label.ACM_RO_Number}"/>
+                            </td>
+                            <td>
+                                <apex:outputText styleClass="claim-detail-input" value="{!roNumber}"/>
+                            </td>
+                        </tr>
+
+                        
+                    </table>
+                    <br/>
+                    <apex:dataTable styleClass="claim-form-summary claim-form-summary-service" align="center" value="{!selectedRegionalPricingModelList}" var="r">
+                        <apex:column value="{!r.Symbol__c}" headerValue="{!$Label.ACM_Service}" headerClass="claim-form-header" footerValue="{!$Label.ACM_Total}" footerClass="claim-form-footer"/>
+                        <apex:column headerValue="{!$Label.ACM_Price}" headerClass="claim-form-header" footerValue="${!total}" footerClass="claim-form-footer">
+                            <apex:outputText value="{0, number, $#,###,###.00}">
+                                <apex:param value="{!r.Price__c}" />
+                            </apex:outputText>
+                        </apex:column>
+                    </apex:dataTable>
+
+                    <apex:outputPanel layout="block" id="bottomButtons">
+                        <table class="button-table claim-form-body">
+                            <tr>
+                                <td>
+                                    <apex:commandButton styleClass="claim-button bottom-buttons" value="{!$Label.ACM_Go_Back}" action="{!goBack}" rendered="{!isClaimInserted == false}"/>
+                                    <apex:commandButton styleClass="claim-button bottom-buttons" value="{!$Label.ACM_New}" action="{!refreshPage}" rendered="{!isClaimInserted}"/>
+                                </td>
+                                <td>
+                                    <apex:commandButton styleClass="claim-button bottom-buttons" value="{!$Label.ACM_Confirm}" reRender="successClaimMessage, bottomButtons" action="{!confirmClaim}" rendered="{!isClaimInserted == false}"/>
+                                </td>
+                                <td>
+                                    <apex:commandButton styleClass="claim-button bottom-buttons" value="{!$Label.ACM_Print}" onclick="window.print();"/>
+                                </td>
+                            </tr>
+                            
+                        </table>
+                    </apex:outputPanel>
+                </apex:outputPanel>
+            </apex:outputPanel>
+
+        </div>
+
+        <apex:actionStatus id="modelStatus">
+            <apex:facet name="start">
+            <div class="spinner-background-div">
+                &nbsp;
+            </div>
+            <div class="spinner-div">
+                <div class="spinner-div-inside">
+                    <img src="/img/loading.gif" class="spinner-image" />
+                    
+                </div>
+            </div>
+            </apex:facet>
+        </apex:actionStatus>
+
+        <apex:actionStatus id="submitStatus">
+            <apex:facet name="start">
+            <div class="spinner-background-div">
+                &nbsp;
+            </div>
+            <div class="spinner-div">
+                <div class="spinner-div-inside">
+                    <img src="/img/loading.gif" class="spinner-image" />
+                    
+                </div>
+            </div>
+            </apex:facet>
+        </apex:actionStatus>
+
+
+    </apex:form>
+</apex:page>

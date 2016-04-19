@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Honda Layout - MCPE Feedback - FR</name>
+    <style>none</style>
+    <subject>Courriel de rétroaction de la Techni-ligne</subject>
+    <textOnly>Courriel de rétroaction de la Techni-ligne  
+
+ Madame, Monsieur,
+
+ Veuillez répondre aux questions suivante s et nous retourner le tout par courriel, afin que nous puissons mettre à jour ce dossier et le fermer.
+
+ Est-ce que les conseils de la Techni-Ligne vous ont aidé pour effectuer les réparations sur ce produit? Oui Non
+
+ Numéro de référence de la Techni-Ligne : {!Case.CaseNumber}
+ Demandé par: {!Case.OwnerFullName}
+ Niv.: {!Case.VIN_Serial_No_read_only__c}
+ Année et modèle: {!Case.Vehicle_Model__c}
+
+ Plainte originale: {!Case.Case_Summary__c}
+
+ Sinon, qu&apos;avez-vous fait pour réparrer ce produit? 
+
+ Commentaires: [ENTER ADDITIONAL COMMENTS] 
+
+************************************************************************ 
+
+Politique de confidentialité | Conditions | Contactez-nous 
+
+Ce courriel est généré par un système automatisé qui ne peut malheureusement pas procurer de réponse, ni d’accusé de réception. Si vous avez des questions ou des commentaires, veuillez suivre le lien Contactez-nous: http://acura.ca/contact_us. 
+
+Acura conserve vos renseignements personnels dans la plus stricte confidentialité, conformément aux directives fédérales et provinciales en vigueur. Pour de plus amples détails sur la Politique d&apos;Acura concernant la protection de la vie privée de la clientèle, veuillez consulter les lignes directrices concernant notre Politique de confidentialité: http://acura.ca/privacy. 
+
+© {!YEAR(TODAY())} Acura Canada. 180, boulevard Honda, Markham (Ontario) L6C 0H9, 1-888-922-8729 
+
+Toute l&apos;information contenue dans ce courriel s&apos;applique uniquement aux véhicules canadiens.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

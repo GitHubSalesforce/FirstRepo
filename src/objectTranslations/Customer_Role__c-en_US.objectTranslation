@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer Role</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customer Roles</value>
+    </caseValues>
+    <fields>
+        <label><!-- Customer --></label>
+        <lookupFilter>
+            <errorMessage><!-- You must select a Customer or Business Customer --></errorMessage>
+        </lookupFilter>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Customer Roles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Correlation Id --></label>
+        <name>Correlation_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective End Date --></label>
+        <name>EffectiveEndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Start Date --></label>
+        <name>EffectiveStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model --></label>
+        <name>Model_Group_search__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model Year --></label>
+        <name>Model_Year_search__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party Product Role Last Update Date --></label>
+        <name>PartyProductRoleLastUpdateDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Party Product Role Last Update User --></label>
+        <name>PartyProductRoleLastUpdateUser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Value --></label>
+        <name>ProductValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Line --></label>
+        <name>Product_Line__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Line --></label>
+        <name>Product_Line_search__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role Value --></label>
+        <name>RoleValue__c</name>
+        <picklistValues>
+            <masterLabel>Additional Driver</masterLabel>
+            <translation><!-- Additional Driver --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Buyer</masterLabel>
+            <translation><!-- Buyer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cobuyer</masterLabel>
+            <translation><!-- Cobuyer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Colesse</masterLabel>
+            <translation><!-- Colesse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coowner</masterLabel>
+            <translation><!-- Coowner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emergency Contact</masterLabel>
+            <translation><!-- Emergency Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Guarantor</masterLabel>
+            <translation><!-- Guarantor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lesse</masterLabel>
+            <translation><!-- Lesse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lessor</masterLabel>
+            <translation><!-- Lessor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owner</masterLabel>
+            <translation><!-- Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Previous Owner</masterLabel>
+            <translation><!-- Previous Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary Driver</masterLabel>
+            <translation><!-- Primary Driver --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Servicer</masterLabel>
+            <translation><!-- Servicer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subscriber</masterLabel>
+            <translation><!-- Subscriber --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warrantee</masterLabel>
+            <translation><!-- Warrantee --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Role Value search --></label>
+        <name>Role_Value_search__c</name>
+    </fields>
+    <fields>
+        <label><!-- UCID --></label>
+        <name>UCID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formula lookup to the VIN/Serial # --></help>
+        <label><!-- VIN/Serial # --></label>
+        <name>VIN_Serial_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- VIN/Serial # --></label>
+        <name>VIN_Serial_No_search__c</name>
+    </fields>
+    <fields>
+        <label><!-- VIN --></label>
+        <name>VIN__c</name>
+        <relationshipLabel><!-- Customer Roles --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Customer Role Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Cannot create a customer role if a contact does not have a primary Address, a primary email, or a primary phone. --></errorMessage>
+        <name>Cannot_Create_CustomerRole</name>
+    </validationRules>
+</CustomObjectTranslation>

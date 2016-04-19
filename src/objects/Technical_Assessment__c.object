@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Designed to store technical assessment for the Customer Relation Technical Case.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Affected_Part__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Technical_Symptoms_Search__r.Affected_Part__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Affected Part</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Area_of_Vehicle__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Technical_Symptoms_Search__r.Area_of_Vehicle__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Area of Vehicle</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case__c</fullName>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Technical Assessments</relationshipLabel>
+        <relationshipName>Technical_Assessments</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Customer_s_Disposition__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer&apos;s Disposition</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not Satisfied</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Date_Field_FE_Requested__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Field FE Requested</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Inspection_Scheduled__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Inspection Scheduled</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Dealer_Contact__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Dealer: Account Record Type: Record Type Name</inlineHelpText>
+        <label>Dealer Contact</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>You must select a Dealer contact.</errorMessage>
+            <filterItems>
+                <field>Contact.RecordType.DeveloperName</field>
+                <operation>equals</operation>
+                <value>Dealer_Contact</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Technical Assessments</relationshipLabel>
+        <relationshipName>Technical_Assessments1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Dealer_Notified_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Dealer Notified Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Dealer__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Dealer</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>You must select a Dealer account.</errorMessage>
+            <filterItems>
+                <field>Account.RecordType.DeveloperName</field>
+                <operation>equals</operation>
+                <value>Dealer_Account</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Technical Assessments</relationshipLabel>
+        <relationshipName>Technical_Assessments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Diagnosis_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Diagnosis Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>FE_Report_No__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>FE Report #</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>FE_Specialist_Assigned__c</fullName>
+        <externalId>false</externalId>
+        <label>FE Specialist Assigned</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Mike Menard</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dan Arsenault</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Martin Creasey</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Shawn Johnson</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Michel Cuillerier</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Michel Aubin</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Anthony Gray</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Inspection_Complete_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Inspection Complete Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Magic_Ticket__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Magic Ticket #</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Root_Cause__c</fullName>
+        <externalId>false</externalId>
+        <label>Root Cause</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Aftermarket Repair/Service Induced</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Body Shop Repair Related</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Did Not Understand Feature</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Induced - Abuse</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Induced - Not Maintained</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dealer Repair/Service Induced</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Design Induced</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Did Not Follow Repair Instruction</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Did Not Follow Service Publication</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>External Environment Induced</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Factory Defect</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>OE Parts Failure</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Recall Part Failure</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Technical Services Bulletin</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Tools Issue</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Vehicle Altered</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Vehicle Disability Modified</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Vehicle Modified Performance</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Technical_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Technical Comments</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Html</type>
+        <visibleLines>25</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Technical_Symptoms_Search__c</fullName>
+        <deleteConstraint>Restrict</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Technical Symptoms Search</label>
+        <referenceTo>Technical_Issue__c</referenceTo>
+        <relationshipLabel>Technical Assessments</relationshipLabel>
+        <relationshipName>Technical_Assessments</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Technical Assessment</label>
+    <nameField>
+        <displayFormat>{000000}</displayFormat>
+        <label>Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Technical Assessments</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>CR_Tech</fullName>
+        <active>true</active>
+        <label>CR Tech</label>
+        <picklistValues>
+            <picklist>Customer_s_Disposition__c</picklist>
+            <values>
+                <fullName>Not Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>FE_Specialist_Assigned__c</picklist>
+            <values>
+                <fullName>Anthony Gray</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dan Arsenault</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Martin Creasey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Michel Aubin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Michel Cuillerier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mike Menard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shawn Johnson</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Root_Cause__c</picklist>
+            <values>
+                <fullName>Aftermarket Repair%2FService Induced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Body Shop Repair Related</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Did Not Understand Feature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Induced - Abuse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Induced - Not Maintained</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dealer Repair%2FService Induced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Design Induced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Did Not Follow Repair Instruction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Did Not Follow Service Publication</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Environment Induced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Factory Defect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OE Parts Failure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recall Part Failure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Services Bulletin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tools Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vehicle Altered</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vehicle Disability Modified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vehicle Modified Performance</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Dealer</fullName>
+        <active>true</active>
+        <label>Dealer</label>
+        <picklistValues>
+            <picklist>Customer_s_Disposition__c</picklist>
+            <values>
+                <fullName>Not Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>FE_Specialist_Assigned__c</picklist>
+            <values>
+                <fullName>Anthony Gray</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dan Arsenault</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Martin Creasey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Michel Aubin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Michel Cuillerier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mike Menard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shawn Johnson</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Root_Cause__c</picklist>
+            <values>
+                <fullName>Aftermarket Repair%2FService Induced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Body Shop Repair Related</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Did Not Understand Feature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Induced - Abuse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Induced - Not Maintained</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dealer Repair%2FService Induced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Design Induced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Did Not Follow Repair Instruction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Did Not Follow Service Publication</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Environment Induced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Factory Defect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OE Parts Failure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recall Part Failure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Services Bulletin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tools Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vehicle Altered</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vehicle Disability Modified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vehicle Modified Performance</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Field_Engineering</fullName>
+        <active>true</active>
+        <label>Field Engineering</label>
+        <picklistValues>
+            <picklist>Customer_s_Disposition__c</picklist>
+            <values>
+                <fullName>Not Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>FE_Specialist_Assigned__c</picklist>
+            <values>
+                <fullName>Anthony Gray</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dan Arsenault</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Martin Creasey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Michel Aubin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Michel Cuillerier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mike Menard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shawn Johnson</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Root_Cause__c</picklist>
+            <values>
+                <fullName>Aftermarket Repair%2FService Induced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Body Shop Repair Related</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Did Not Understand Feature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Induced - Abuse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Induced - Not Maintained</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dealer Repair%2FService Induced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Design Induced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Did Not Follow Repair Instruction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Did Not Follow Service Publication</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Environment Induced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Factory Defect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OE Parts Failure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recall Part Failure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Services Bulletin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tools Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vehicle Altered</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vehicle Disability Modified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vehicle Modified Performance</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Tech_Line</fullName>
+        <active>true</active>
+        <label>Tech Line</label>
+        <picklistValues>
+            <picklist>Customer_s_Disposition__c</picklist>
+            <values>
+                <fullName>Not Satisfied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Satisfied</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>FE_Specialist_Assigned__c</picklist>
+            <values>
+                <fullName>Anthony Gray</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dan Arsenault</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Martin Creasey</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Michel Aubin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Michel Cuillerier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mike Menard</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shawn Johnson</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Root_Cause__c</picklist>
+            <values>
+                <fullName>Aftermarket Repair%2FService Induced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Body Shop Repair Related</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Did Not Understand Feature</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Induced - Abuse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Induced - Not Maintained</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dealer Repair%2FService Induced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Design Induced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Did Not Follow Repair Instruction</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Did Not Follow Service Publication</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Environment Induced</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Factory Defect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>OE Parts Failure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recall Part Failure</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Technical Services Bulletin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tools Issue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vehicle Altered</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vehicle Disability Modified</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vehicle Modified Performance</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+</CustomObject>

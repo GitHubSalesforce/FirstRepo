@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>ACM_1st_Sub_Symbol</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM_1st Sub Symbol</shortDescription>
+        <value>1st Sub Symbol</value>
+    </labels>
+    <labels>
+        <fullName>ACM_2nd_Sub_Symbol</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM_2nd Sub Symbol</shortDescription>
+        <value>2nd Sub Symbol</value>
+    </labels>
+    <labels>
+        <fullName>ACM_3rd_Sub_Symbol</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM_3rd Sub Symbol</shortDescription>
+        <value>3rd Sub Symbol</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Active_Campaign</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM_Active_Campaign</shortDescription>
+        <value>Active Campaign</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Already_Submitted_Claim</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM_Already Submitted Claim</shortDescription>
+        <value>You have already submitted this claim. Date: {DATE}, RO#: {RO_NUM} Symbol: {SYM}, Mileage: {KM}.</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Campaign_End_Date</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM Campaign End Date</shortDescription>
+        <value>Campaign End Date</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Campaign_Name</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM Campaign Name</shortDescription>
+        <value>Campaign Name</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Confirm</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM Confirm</shortDescription>
+        <value>Confirm</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Dealer</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM_Dealer</shortDescription>
+        <value>Dealer</value>
+    </labels>
+    <labels>
+        <fullName>ACM_English</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM English</shortDescription>
+        <value>English</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Enter_PIN</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM Enter PIN</shortDescription>
+        <value>Enter customer&apos;s unique Promotional PIN below to verify if PIN is eligible:</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Enter_VIN</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM_Enter VIN</shortDescription>
+        <value>VIN Number</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Expired_PIN</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM Expired PIN</shortDescription>
+        <value>Promotional PIN expired on {DATE}. Please contact your Retail Sales Consultant if you require more information.</value>
+    </labels>
+    <labels>
+        <fullName>ACM_French</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM French</shortDescription>
+        <value>Français</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Go_Back</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM Go Back</shortDescription>
+        <value>Go Back</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Honda_PIN_Title</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM Honda PIN Title</shortDescription>
+        <value>Honda Promotional PIN Site</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Invalid_Dealer_Code</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM_Invalid_Dealer_Code</shortDescription>
+        <value>Invalid dealer code</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Invalid_PIN</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM Invalid PIN</shortDescription>
+        <value>Promotional PIN is invalid. Please contact your Regional Zone Office if you require more information</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Invalid_RO</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM_Invalid_RO</shortDescription>
+        <value>Invalid RO</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Invalid_Symbols_Error</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM Invalid Symbols Error</shortDescription>
+        <value>VIN is not entitled to complimentary maintenance for one or more of the symbols entered. Please contact your Regional Zone Office if you require more information.</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Invalid_VIN</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM_Invalid VIN</shortDescription>
+        <value>The entered VIN is invalid. Please double check your entry and try again.</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Main_Symbol</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM_Main Symbol</shortDescription>
+        <value>Main Symbol</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Main_Symbol_Required</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM_Main Symbol Required</shortDescription>
+        <value>Please select a Main Symbol.</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Model</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM_Model</shortDescription>
+        <value>Model</value>
+    </labels>
+    <labels>
+        <fullName>ACM_New</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM New</shortDescription>
+        <value>New</value>
+    </labels>
+    <labels>
+        <fullName>ACM_New_Product_Serial_Number</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM New Product Serial Number</shortDescription>
+        <value>New Product Serial Number</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Non_qualifying_VIN_error</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM_Non-qualifying VIN error</shortDescription>
+        <value>The VIN you have entered does not qualify for the campaign.</value>
+    </labels>
+    <labels>
+        <fullName>ACM_OK</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM_OK</shortDescription>
+        <value>OK</value>
+    </labels>
+    <labels>
+        <fullName>ACM_PIN_Success</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM_PIN_Success</shortDescription>
+        <value>The Promotional PIN {PIN} has now been applied to the VIN {VIN}. Your VIN and PIN have been submitted for processing.</value>
+    </labels>
+    <labels>
+        <fullName>ACM_PIN_Title</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM Pin Title</shortDescription>
+        <value>Acura Promotional PIN Site</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Price</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM_Price</shortDescription>
+        <value>Price</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Print</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM Print</shortDescription>
+        <value>Print</value>
+    </labels>
+    <labels>
+        <fullName>ACM_RO_Number</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM_RO Number</shortDescription>
+        <value>RO Number</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Redeemed_PIN</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM Redeemed PIN</shortDescription>
+        <value>Promotional PIN has already been redeemed. Each unique promotional PIN can only be redeemed once. Please contact your Regional Zone Office if you require more information.</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Service</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM_Service</shortDescription>
+        <value>Service</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Service_Details</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM_Service Details</shortDescription>
+        <value>Service Details</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Submission_Details</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM_Submission Details</shortDescription>
+        <value>Submission Details</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Submit</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM_Submit</shortDescription>
+        <value>Submit</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Submit_Warning</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM Submit Warning</shortDescription>
+        <value>Click Submit only if the customer is ready to purchase the VIN added above. PINs can only be submitted once.</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Successful_Claim</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM_Successful Claim</shortDescription>
+        <value>You have successfully submitted this claim. Date: {DATE}, RO#: {RO_NUM}, Symbol: {SYM}, Mileage: {KM}</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Total</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM_Total</shortDescription>
+        <value>Total</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Verify_PIN</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM_Verify_PIN</shortDescription>
+        <value>Verify PIN</value>
+    </labels>
+    <labels>
+        <fullName>ACM_View_Reports</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM View Reports</shortDescription>
+        <value>View Reports</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Website_Name</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM_Website Name</shortDescription>
+        <value>Complimentary Maintenance Site</value>
+    </labels>
+    <labels>
+        <fullName>ACM_Zone</fullName>
+        <categories>ACM</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ACM_Zone</shortDescription>
+        <value>Zone</value>
+    </labels>
+    <labels>
+        <fullName>Active_HFS_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Active HFS Error</shortDescription>
+        <value>Customers with active HFS customer roles cannot be modified</value>
+    </labels>
+    <labels>
+        <fullName>Business_Record_Type_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Business Record Type Name</shortDescription>
+        <value>Organization</value>
+    </labels>
+    <labels>
+        <fullName>Contact_Center_Company</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contact Center Company</shortDescription>
+        <value>00Nj0000009yqvU</value>
+    </labels>
+    <labels>
+        <fullName>Contact_Insert_Error1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contact Insert Error1</shortDescription>
+        <value>Please Enter Values in any of the following fields :- Primary Address, Primary Email or Primary Phone.</value>
+    </labels>
+    <labels>
+        <fullName>Customer_Record_Type_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Record Type Name</shortDescription>
+        <value>Customer</value>
+    </labels>
+    <labels>
+        <fullName>DWLError</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DWLError</shortDescription>
+        <value>DWLError</value>
+    </labels>
+    <labels>
+        <fullName>DisableEmailEditing</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DisableEmailEditing</shortDescription>
+        <value>Email cannot be Edited</value>
+    </labels>
+    <labels>
+        <fullName>DisableFeedCommentDeletes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DisableFeedCommentDeletes</shortDescription>
+        <value>Your administrator has disabled feed post and comment deletions.</value>
+    </labels>
+    <labels>
+        <fullName>DisableFeedPostDeletes</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DisableFeedPostDeletes</shortDescription>
+        <value>Your administrator has disabled feed post and comment deletions.</value>
+    </labels>
+    <labels>
+        <fullName>DisableTaskDeletion</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>DisableTaskDeletion</shortDescription>
+        <value>Your administrator has disabled task deletions.</value>
+    </labels>
+    <labels>
+        <fullName>Email_address</fullName>
+        <categories>Honda Email address</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Email address</shortDescription>
+        <value>Email address</value>
+    </labels>
+    <labels>
+        <fullName>Error_Object</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error Object</shortDescription>
+        <value>ErrorLog__c</value>
+    </labels>
+    <labels>
+        <fullName>Group</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Group</shortDescription>
+        <value>00Nj0000009fgEd</value>
+    </labels>
+    <labels>
+        <fullName>Success_message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Success message</shortDescription>
+        <value>Error Successfully Inserted.</value>
+    </labels>
+    <labels>
+        <fullName>Vehicle_Ownership_Error_Message</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vehicle Ownership Error Message</shortDescription>
+        <value>You do not have permission to change Vehicle/Product ownership</value>
+    </labels>
+    <labels>
+        <fullName>Vin_field</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Vin field</shortDescription>
+        <value>CF00Nj000000A17jf</value>
+    </labels>
+</CustomLabels>

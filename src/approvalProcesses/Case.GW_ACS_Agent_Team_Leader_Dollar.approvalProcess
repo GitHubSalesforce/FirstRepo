@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>CaseNumber</field>
+        <field>Owner</field>
+        <field>CreatedDate</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>CRC_and_Acura_Concierge_Supervisors</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>Goodwill_Amount__c &gt; 1000</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>GW - ACS - Agent - Dollar - Step 1</label>
+        <name>GW_ACS_Agent_Dollar_Step_1</name>
+    </approvalStep>
+    <description>This is the first step in the approval process. Subsequent ones will go through a ladder process.</description>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>ISPICKVAL(Group__c, &quot;Acura Concierge&quot;) &amp;&amp; ($UserRole.DeveloperName == &quot;Acura_Concierge_Agent&quot; || $UserRole.DeveloperName == &quot;Acura_Concierge_Team_Leader&quot;) &amp;&amp; NOT(ISPICKVAL(Status, &quot;Closed&quot;) || ISPICKVAL(Status, &quot;Cancelled&quot;)) &amp;&amp; Goodwill_Amount__c &gt; 0 &amp;&amp; Goodwill_Amount__c &lt;= 10000 &amp;&amp; ISPICKVAL(Category_Level_2__c, &quot;Dollar&quot;)</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Change_Owner_to_Customer_Accounting</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Process_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Process_Declined</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Process_Pending</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>GW - ACS - Agent/Team Leader - Dollar</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

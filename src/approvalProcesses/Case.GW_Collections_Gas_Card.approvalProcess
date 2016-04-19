@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>CaseNumber</field>
+        <field>Owner</field>
+        <field>CreatedDate</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Collections_Recovery_Resol_Senior_Agents</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>Goodwill_Amount__c &gt; 150 &amp;&amp; Goodwill_Amount__c &lt;= 500</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>GW - Collections - Gas Card - Step 1</label>
+        <name>GW_Collections_Gas_Card_Step_1</name>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Collections_Team_Leaders_Approvals</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>Goodwill_Amount__c &gt; 500 &amp;&amp; Goodwill_Amount__c &lt;= 1000</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>GW - Collections - Gas Card - Step 2</label>
+        <name>GW_Collections_Gas_Card_Step_2</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Collections_Recovery_Resolut_Supervisors</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>Goodwill_Amount__c &gt; 1000 &amp;&amp; Goodwill_Amount__c &lt;= 10000</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>GotoNextStep</ifCriteriaNotMet>
+        <label>GW - Collections - Gas Card - Step 3</label>
+        <name>GW_Collections_Gas_Card_Step_3</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Collections_Recover_Reslution_Managers</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <label>GW - Collections - Gas Card - Step 4</label>
+        <name>GW_Collections_Gas_Card_Step_4</name>
+        <rejectBehavior>
+            <type>BackToPrevious</type>
+        </rejectBehavior>
+    </approvalStep>
+    <description>Gas Card process; assumes Managers never submit a case for approval (using Salesforce approval process)</description>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>(ISPICKVAL(Group__c, &quot;Collections&quot;) || ISPICKVAL(Group__c, &quot;Recovery Centre&quot;) ||ISPICKVAL(Group__c, &quot;Resolution Centre&quot;)) &amp;&amp; NOT(ISPICKVAL(Status, &quot;Closed&quot;) || ISPICKVAL(Status, &quot;Cancelled&quot;)) &amp;&amp; Goodwill_Amount__c &gt; 0 &amp;&amp; ISPICKVAL(Category_Level_2__c, &quot;Gas Card&quot;)</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Change_Owner_to_CQC_Manager</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Process_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Process_Declined</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Process_Pending</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>GW - Collections - Gas Card</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recallActions>
+        <action>
+            <name>Process_Open</name>
+            <type>FieldUpdate</type>
+        </action>
+    </recallActions>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Product__c.VIN__r.Claims__r$CreatedBy.Account.Dealer_Code__c</field>
+    </columns>
+    <columns>
+        <field>Product__c.VIN__r$ProductSerialNumber__c</field>
+    </columns>
+    <columns>
+        <field>Product__c$Model_Code__c</field>
+    </columns>
+    <columns>
+        <field>Product__c.VIN__r.Claims__r$RO_Number__c</field>
+    </columns>
+    <columns>
+        <field>Product__c.VIN__r.Claims__r$Total_Price__c</field>
+    </columns>
+    <columns>
+        <field>Product__c.VIN__r.Claims__r$Name</field>
+    </columns>
+    <columns>
+        <field>Product__c.VIN__r.Claims__r$Valid_Date__c</field>
+    </columns>
+    <description>The purpose of the report is to show details about entries of a dealer, including payment description and purchase data. The report shows details per each model.</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Product__c.VIN__r$Model_Group__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Product__c.VIN__r.Claims__r$CreatedDate</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Break by Model Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Products_with_VINs_with_Claims__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Product__c.VIN__r.Claims__r$Total_Price__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Product__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

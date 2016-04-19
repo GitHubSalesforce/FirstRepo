@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Alert</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Alerts</value>
+    </caseValues>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Alerts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Something brief about the alert --></help>
+        <label><!-- Details --></label>
+        <name>Details__c</name>
+    </fields>
+    <fields>
+        <help><!-- When does this alert expire? --></help>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- When is this alert applicable for start? --></help>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>CR Customer Notice</masterLabel>
+            <translation><!-- CR Customer Notice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CR Sales Credit</masterLabel>
+            <translation><!-- CR Sales Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CR Service Credit</masterLabel>
+            <translation><!-- CR Service Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial</masterLabel>
+            <translation><!-- Financial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Legal</masterLabel>
+            <translation><!-- Legal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recovery</masterLabel>
+            <translation><!-- Recovery --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Custom Alert Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

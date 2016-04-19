@@ -1,0 +1,139 @@
+<apex:page standardController="contact" extensions="H_ContactInsertController">
+    <head>
+        <style>
+            .bPageBlock .detailList .dataCol{
+                width:40%;
+            }
+        </style>
+    </head>
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageMessages id="pgMsg"/>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Save" action="{!saveRec}"/>
+                <apex:commandButton value="Cancel" action="{!cancel}"/>
+            </apex:pageBlockButtons>
+            <apex:outputPanel layout="block" rendered="{!If(contactType == $label.Business_Record_Type_Name ,true,false) }">
+                <apex:pageBlockSection columns="2" title="Contact Information" collapsible="false">
+                    <apex:repeat value="{!$ObjectType.contact.FieldSets.Information_Section_Organization}"  var="f">
+                        <apex:inputField value="{!contact[f.fieldPath]}" required="{!OR(f.required, f.dbrequired)}"/>
+                    </apex:repeat>
+                </apex:pageBlockSection>
+                    <!--<apex:inputField value="{!contact.MailingStreet}" required="true"/>
+                    <apex:inputField value="{!contact.MailingCity}" required="true"/>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Province / State" for="mailing2" />                     
+                        <apex:outputPanel styleClass="requiredInput" layout="block" >                    
+                        <apex:outputPanel styleClass="requiredBlock" layout="block"/>
+                            <apex:selectList value="{!selectedProvince}" id="mailing2" size="1" >
+                                <apex:selectOptions value="{!Province}"/>
+                            </apex:selectList>
+                        </apex:outputPanel>
+                    </apex:pageBlockSectionItem>
+                    <apex:inputField value="{!contact.MailingPostalCode}" required="true"/>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Country" for="country" />                     
+                        <apex:outputPanel styleClass="requiredInput" layout="block" >                    
+                        <apex:outputPanel styleClass="requiredBlock" layout="block"/>
+                            <apex:selectList value="{!selectedCountry}" id="country" size="1">
+                                <apex:selectOptions value="{!Country}"/>
+                            </apex:selectList>
+                        </apex:outputPanel>
+                    </apex:pageBlockSectionItem>
+                    <span/>
+                </apex:pageBlockSection>-->
+            </apex:outputPanel>
+            <apex:outputPanel layout="block" rendered="{!If(contactType == $label.Customer_Record_Type_Name ,true,false) }">
+                <apex:pageBlockSection columns="2" title="Contact Information" collapsible="false">
+                    <apex:pageBlockSectionItem >
+                        <apex:outputlabel value="First Name"/>
+                        <apex:outputpanel >
+                            <apex:inputField value="{!Contact.Salutation}"></apex:inputField>
+                            <apex:inputField style="width: 150px;" value="{!Contact.FirstName}"></apex:inputField>
+                        </apex:outputpanel>
+                    </apex:pageBlockSectionItem>
+                    <apex:repeat value="{!$ObjectType.contact.FieldSets.Information_Section}"  var="f">
+                        <apex:inputField value="{!contact[f.fieldPath]}" required="{!OR(f.required, f.dbrequired)}"/>
+                    </apex:repeat>
+                </apex:pageBlockSection>                
+            </apex:outputPanel>
+            <apex:pageBlockSection columns="2" title="Address Information" collapsible="false">                    
+                    <apex:inputField value="{!contact.MailingStreet}" required="true"/>
+                    <span/>
+                    <apex:inputField value="{!contact.MailingCity}" required="true" />
+                    <span/>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Province / State" for="mailing1" />                     
+                        <apex:outputPanel styleClass="requiredInput" layout="block" >                    
+                        <apex:outputPanel styleClass="requiredBlock" layout="block"/>
+                            <apex:selectList value="{!selectedProvince}" id="mailing1" size="1">
+                                <apex:selectOptions value="{!Province}"/>
+                            </apex:selectList>
+                        </apex:outputPanel>
+                    </apex:pageBlockSectionItem>
+                    <span/>
+                    <apex:inputField value="{!contact.MailingPostalCode}" required="true"/>
+                    <span/>
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Country" for="country" />                     
+                        <apex:outputPanel styleClass="requiredInput" layout="block" >                    
+                        <apex:outputPanel styleClass="requiredBlock" layout="block"/>
+                            <apex:selectList value="{!selectedCountry}" id="country" size="1">
+                                <apex:selectOptions value="{!Country}"/>
+                            </apex:selectList>
+                        </apex:outputPanel>
+                    </apex:pageBlockSectionItem>
+                    <span/>
+                </apex:pageBlockSection>
+             <!--<apex:pageBlockSection columns="1" title="Additional Information" collapsible="false">
+                <apex:repeat value="{!$ObjectType.contact.FieldSets.Additional_Section}"  var="f">
+                            <apex:inputField value="{!contact[f.fieldPath]}" required="{!OR(f.required, f.dbrequired)}"/>
+                </apex:repeat>
+            </apex:pageBlockSection>-->
+            <apex:outputPanel layout="block" rendered="{!If(contactType == $label.Customer_Record_Type_Name ,true,false) }">
+                <apex:pageBlockSection columns="2" title="Privacy Preferences - Honda Canada" collapsible="false">
+                    <apex:repeat value="{!$ObjectType.contact.FieldSets.Privacy_Preferences_Honda_Canada}"  var="f">
+                                <apex:inputField value="{!contact[f.fieldPath]}" required="{!OR(f.required, f.dbrequired)}"/>
+                    </apex:repeat>
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="2" title="Privacy Preferences - Honda Financial Services" collapsible="false">
+                    <apex:repeat value="{!$ObjectType.contact.FieldSets.Privacy_Preferences_Honda_Financial_Serv}"  var="f">
+                                <apex:inputField value="{!contact[f.fieldPath]}" required="{!OR(f.required, f.dbrequired)}"/>
+                    </apex:repeat>
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="2" title="Privacy Preferences - Dealer" collapsible="false">
+                    <apex:repeat value="{!$ObjectType.contact.FieldSets.Privacy_Preferences_Dealer}"  var="f">
+                                <apex:inputField value="{!contact[f.fieldPath]}" required="{!OR(f.required, f.dbrequired)}"/>
+                    </apex:repeat>
+                </apex:pageBlockSection>
+            </apex:outputPanel>
+            <apex:outputPanel layout="block" rendered="{!If(contactType == $label.Business_Record_Type_Name ,true,false) }">
+                <apex:pageBlockSection columns="2" title="Privacy Preferences - Honda Canada" collapsible="false">
+                    <apex:repeat value="{!$ObjectType.contact.FieldSets.Privacy_Preferences_Honda_Canada}"  var="f">
+                                <apex:inputField value="{!contact[f.fieldPath]}" />
+                    </apex:repeat>
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="2" title="Privacy Preferences - Honda Financial Services" collapsible="false">
+                    <apex:repeat value="{!$ObjectType.contact.FieldSets.Privacy_Preferences_Honda_Financial_Serv}"  var="f">
+                                <apex:inputField value="{!contact[f.fieldPath]}" />
+                    </apex:repeat>
+                </apex:pageBlockSection>
+                <apex:pageBlockSection columns="2" title="Privacy Preferences - Dealer" collapsible="false">
+                    <apex:repeat value="{!$ObjectType.contact.FieldSets.Privacy_Preferences_Dealer}"  var="f">
+                                <apex:inputField value="{!contact[f.fieldPath]}" />
+                    </apex:repeat>
+                </apex:pageBlockSection>
+            </apex:outputPanel>
+            <!--<apex:pageBlockSection columns="2" title="System Information" collapsible="false">
+                <apex:repeat value="{!$ObjectType.contact.FieldSets.System_Information}"  var="f">
+                            <apex:inputField value="{!contact[f.fieldPath]}" required="{!OR(f.required, f.dbrequired)}"/>
+                </apex:repeat>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection columns="1" title="CRM Information" collapsible="false">
+                <apex:repeat value="{!$ObjectType.contact.FieldSets.CRM_Information}"  var="f">
+                            <apex:inputField value="{!contact[f.fieldPath]}" required="{!OR(f.required, f.dbrequired)}"/>
+                </apex:repeat>
+            </apex:pageBlockSection>-->
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

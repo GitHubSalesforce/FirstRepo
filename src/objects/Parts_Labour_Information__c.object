@@ -1,0 +1,1064 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Group: CR
+Labour Service Information Layout</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Case__c</fullName>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipName>Order_Items</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Core_Failed_Part_S_N__c</fullName>
+        <description>Serial # of the failed part</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Serial # of the failed part</inlineHelpText>
+        <label>Core Failed Part S/N</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Core_Replaced_Part_S_N__c</fullName>
+        <description>Serial # of the replacement part</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Serial # of the replacement part</inlineHelpText>
+        <label>Core Replaced Part S/N</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Critical_Back_Order_ETA__c</fullName>
+        <externalId>false</externalId>
+        <label>Critical Back Order ETA</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Pay__c</fullName>
+        <externalId>false</externalId>
+        <formula>Total_Price_Negotiated__c -  Honda_Canada_Contribution__c - Dealer_Parts_Contribution__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Customer Pay</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Date_CBO_was_placed__c</fullName>
+        <externalId>false</externalId>
+        <label>Date CBO was placed</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Dealer_Labour_Contribution__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Dealer Labour Contribution</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dealer_Negotiated_Labour_Rate__c</fullName>
+        <description>Group: CR Financial Assistance 
+Layout: Labour Service Information Layout</description>
+        <externalId>false</externalId>
+        <label>Dealer Negotiated Labour Rate</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dealer_Negotiated_Labour_Time__c</fullName>
+        <description>What the dealer is agreeing to (possible reduction)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>What the dealer is agreeing to (possible reduction)</inlineHelpText>
+        <label>Dealer Negotiated Labour Time</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Dealer_Negotiated_Part_Price__c</fullName>
+        <description>Part Price (Net) + Markup (Adjusted)</description>
+        <externalId>false</externalId>
+        <formula>IF( Dealer_Negotiated_Price_amount__c == 0,  Part_Price_Net__c * (1+ Dealer_Negotiated_Price_pcnt__c) , Part_Price_Net__c + Dealer_Negotiated_Price_amount__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Part Price (Net) + Markup (Adjusted)</inlineHelpText>
+        <label>Dealer Negotiated Part Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dealer_Negotiated_Price_amount__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Negotiate dollars ($) + Net Price</inlineHelpText>
+        <label>Dealer Negotiated Price ($)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dealer_Negotiated_Price_pcnt__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Negotiated percentage (%) + Net Price</inlineHelpText>
+        <label>Dealer Negotiated Price (%)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Dealer_Negotiated_Sublet__c</fullName>
+        <description>Group: CR
+Layout: Labour Service Information</description>
+        <externalId>false</externalId>
+        <formula>Sublet__c - Dealer_Sublet_Contribution__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Dealer Negotiated Sublet</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dealer_Parts_Contribution__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Dealer Parts Contribution</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Dealer_Sublet_Contribution__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Dealer Sublet Contribution</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Flat_Rate_Labour_Time_Warranty__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Alloted time in hours for repair based on flat time rate manual</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Alloted time in hours for repair based on flat time rate manual</inlineHelpText>
+        <label>Flat Rate Labour Time - Warranty</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Honda_Canada_Contribution__c</fullName>
+        <externalId>false</externalId>
+        <formula>(Honda_Canada_Labour_Contribution__c +  Honda_Canada_Sublet_Contribution__c)  +  Honda_Canada_Parts_Contribution__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Honda Canada Contribution</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Honda_Canada_Labour_Contribution__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Honda Canada Labour Contribution</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Honda_Canada_Parts_Contribution__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Honda Canada Parts Contribution</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Honda_Canada_Sublet_Contribution__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>CR Financial Assistant</description>
+        <externalId>false</externalId>
+        <label>Honda Canada Sublet Contribution</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>JD_Julian_Date__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>JD (Julian Date)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Labour_Cost_Retail__c</fullName>
+        <description>Retail cost of labour</description>
+        <externalId>false</externalId>
+        <formula>Labour_Rate_Retail__c * Labour_Time_Retail__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Retail cost of labour</inlineHelpText>
+        <label>Labour Cost - Retail</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Labour_Cost_Warranty__c</fullName>
+        <description>flat rate hours x hourly warranty labour rate.</description>
+        <externalId>false</externalId>
+        <formula>Flat_Rate_Labour_Time_Warranty__c *   Labour_Rate_Warranty__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>flat rate hours x hourly warranty labour rate.</inlineHelpText>
+        <label>Labour Cost - Warranty</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Labour_Operation_Number_LON__c</fullName>
+        <description>Added to Parts/Labour Related List. To be used under CH - Dealer, Warranty Page Layout</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Labour Operation Number (LON)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Labour_Rate_Retail__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Walk in rate of pay per hour at dealer</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Walk in rate of pay per hour at dealer</inlineHelpText>
+        <label>Labour Rate - Retail</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Labour_Rate_Warranty__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Warranty pay rate per hour from Dealer profile</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Warranty pay rate per hour from Dealer profile</inlineHelpText>
+        <label>Labour Rate - Warranty</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Labour_Time_Retail__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Hours to complete repair</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hours to complete repair</inlineHelpText>
+        <label>Labour Time - Retail</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lot_No__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Lot #</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Measurements__c</fullName>
+        <description>Part measurement details (for fitting purposes)</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Part measurement details (for fitting purposes)</inlineHelpText>
+        <label>Measurements</label>
+        <length>131072</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Muffler_Certificate_No__c</fullName>
+        <description>To be used for Warranty</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Muffler Certificate #</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order_No__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Order #</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order_Type__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Order Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Part_Category__c</fullName>
+        <externalId>false</externalId>
+        <label>Part Category</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Accessories</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Body</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chassis</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Electrical</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Engine</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fuel &amp; Exhaust</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Heating &amp; Air Conditioning</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Interior/Bumper</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Steering</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Transmission</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Part_Detailed_Description__c</fullName>
+        <description>Description of part</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>Description of part</inlineHelpText>
+        <label>Part Detailed Description</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Part_Mark_Up_Retail_amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Part_Price_Retail__c &gt; 0,  Part_Price_Retail__c - Part_Price_Net__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Customer pay cost Mark Up of part in dollars ($)</inlineHelpText>
+        <label>Part Mark Up - Retail ($)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Part_Mark_Up_Retail_percent__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Part_Price_Retail__c &gt; 0, (Part_Price_Retail__c - Part_Price_Net__c)/Part_Price_Net__c, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Customer pay cost Mark Up of part in percentage (%)</inlineHelpText>
+        <label>Part Mark Up - Retail (%)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Part_Mark_Up_Warranty_amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Part Mark Up - Warranty  ($)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Part_Mark_Up_Warranty_percent__c</fullName>
+        <externalId>false</externalId>
+        <label>Part Mark Up - Warranty (%)</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Part_Price_Net__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Total net price of part.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total net price of part.</inlineHelpText>
+        <label>Part Price - Net</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Part_Price_Retail__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Customer pay cost of part</inlineHelpText>
+        <label>Part Price - Retail</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Part_Price_Warranty__c</fullName>
+        <description>Cost of part at Warranty rate</description>
+        <externalId>false</externalId>
+        <formula>IF(Part_Mark_Up_Warranty_amount__c == 0, Part_Price_Net__c *  (1+Part_Mark_Up_Warranty_percent__c), Part_Price_Net__c + Part_Mark_Up_Warranty_amount__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Cost of part at Warranty rate</inlineHelpText>
+        <label>Part Price - Warranty</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Parts_Distribution_Center_PDC__c</fullName>
+        <externalId>false</externalId>
+        <label>Parts Distribution Center (PDC)</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Calgary</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Montreal</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Toronto</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Purolator_Tracking_No__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <inlineHelpText>For multiple tracking #&apos;s, please separate them by COMMAS.
+DO NOT put space between the commas or any of the characters.</inlineHelpText>
+        <label>Purolator Tracking #</label>
+        <length>99</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quantity__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reference_No__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Reference #</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sublet__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Dealer to provide</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Dealer to provide</inlineHelpText>
+        <label>Sublet</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Dealer_Negotiated_Labour_Cost__c</fullName>
+        <externalId>false</externalId>
+        <formula>Dealer_Negotiated_Labour_Rate__c * Dealer_Negotiated_Labour_Time__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Dealer Negotiated Labor
++ Dealer Negotiated Sublet</inlineHelpText>
+        <label>Total Dealer Negotiated Labour Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Dealer_Negotiated_Parts__c</fullName>
+        <description>quantity * Part Price (Adjusted, Retail)</description>
+        <externalId>false</externalId>
+        <formula>Quantity__c *  Dealer_Negotiated_Part_Price__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>quantity * Part Price (Adjusted, Retail)</inlineHelpText>
+        <label>Total Dealer Negotiated Parts</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Parts_Price_Net__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quantity__c * Part_Price_Net__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Parts Price - Net</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Parts_Price_Retail__c</fullName>
+        <description>quantity * part price (retail)</description>
+        <externalId>false</externalId>
+        <formula>Quantity__c *  Part_Price_Retail__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>quantity * part price (retail)</inlineHelpText>
+        <label>Total Parts Price - Retail</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Parts_Price_Warranty__c</fullName>
+        <description>quantity * part price (warranty)</description>
+        <externalId>false</externalId>
+        <formula>Quantity__c * Part_Price_Warranty__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>quantity * part price (warranty)</inlineHelpText>
+        <label>Total Parts Price - Warranty</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Price_Negotiated__c</fullName>
+        <externalId>false</externalId>
+        <formula>Total_Dealer_Negotiated_Parts__c +  Total_Dealer_Negotiated_Labour_Cost__c + Dealer_Negotiated_Sublet__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Price - Negotiated</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Price_Retail__c</fullName>
+        <description>Group: CR
+Financial Assistance case layout on Parts/Labour Related List View</description>
+        <externalId>false</externalId>
+        <formula>(Sublet__c + Labour_Cost_Retail__c) + (Quantity__c * Part_Price_Retail__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Price - Retail</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Price_Warranty__c</fullName>
+        <description>Group: CR
+Financial Assistance Case Layout</description>
+        <externalId>false</externalId>
+        <formula>(Labour_Cost_Warranty__c  + Sublet__c) + (Quantity__c * Part_Price_Warranty__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Price - Warranty</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>VC_Number__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>VC Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Parts/Labour Information</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Part # / Labour Description</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Parts/Labour Information</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Labour_Service_Information</fullName>
+        <active>true</active>
+        <label>Labour Service Information</label>
+        <picklistValues>
+            <picklist>Part_Category__c</picklist>
+            <values>
+                <fullName>Accessories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Body</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chassis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fuel %26 Exhaust</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Heating %26 Air Conditioning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Steering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transmission</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Parts_Distribution_Center_PDC__c</picklist>
+            <values>
+                <fullName>Calgary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Montreal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Toronto</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Parts_Order_Item</fullName>
+        <active>true</active>
+        <label>Parts Order Item</label>
+        <picklistValues>
+            <picklist>Part_Category__c</picklist>
+            <values>
+                <fullName>Accessories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Body</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chassis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fuel %26 Exhaust</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Heating %26 Air Conditioning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Interior%2FBumper</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Steering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transmission</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Parts_Distribution_Center_PDC__c</picklist>
+            <values>
+                <fullName>Calgary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Montreal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Toronto</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Parts_Service_Information</fullName>
+        <active>true</active>
+        <label>Parts Service Information</label>
+        <picklistValues>
+            <picklist>Part_Category__c</picklist>
+            <values>
+                <fullName>Accessories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Body</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chassis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Engine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fuel %26 Exhaust</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Heating %26 Air Conditioning</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Steering</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Transmission</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Parts_Distribution_Center_PDC__c</picklist>
+            <values>
+                <fullName>Calgary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Montreal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Toronto</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Must_enter_one_adjusted_markup_only</fullName>
+        <active>true</active>
+        <errorConditionFormula>(RecordType.DeveloperName == &quot;Parts_Service_Information&quot;) &amp;&amp; NOT(ISBLANK( Dealer_Negotiated_Price_amount__c )) &amp;&amp; NOT(ISBLANK( Dealer_Negotiated_Price_pcnt__c ))</errorConditionFormula>
+        <errorDisplayField>Dealer_Negotiated_Price_amount__c</errorDisplayField>
+        <errorMessage>You must enter either ONE of Markup Amount ($) or Markup Percent (%), but NOT both</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Must_enter_one_markup_field_only_warrant</fullName>
+        <active>true</active>
+        <errorConditionFormula>(RecordType.DeveloperName == &quot;Parts_Service_Information&quot;) &amp;&amp; NOT(ISBLANK( Part_Mark_Up_Warranty_amount__c )) 
+&amp;&amp; NOT(ISBLANK( Part_Mark_Up_Warranty_percent__c ))</errorConditionFormula>
+        <errorDisplayField>Part_Mark_Up_Warranty_amount__c</errorDisplayField>
+        <errorMessage>You must enter either ONE of Markup Amount ($) or Markup Percent (%), but NOT both</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Purolator_Status</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>800</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Purolator Status</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>true</showsLocation>
+        <showsStatus>true</showsStatus>
+        <url>https://www.purolator.com/purolator/ship-track/tracking-details.page?pin={!Parts_Labour_Information__c.Purolator_Tracking_No__c}</url>
+        <width>1200</width>
+    </webLinks>
+</CustomObject>

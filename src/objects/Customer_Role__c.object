@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>You must select a Customer or Business Customer</errorMessage>
+            <filterItems>
+                <field>Contact.RecordType.DeveloperName</field>
+                <operation>equals</operation>
+                <value>Customer, Organization</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Customer Roles</relationshipLabel>
+        <relationshipName>Customer_Roles</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Correlation_Id__c</fullName>
+        <description>This will be sent back to Salesforce if MDM encounters an error.   It is a concatenation of the SF Id and Last Modified Date Time.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(TEXT(LastModifiedDate), &apos;Z&apos;, &apos;.&apos; + MID(TEXT(MOD(MOD(LastModifiedDate - $System.OriginDateTime, 1), 86400)), 3, 3)),&apos;-&apos;,&apos;&apos;),&apos;:&apos;,&apos;&apos;),&apos; &apos;,&apos;&apos;),&apos;.&apos;,&apos;&apos;)</formula>
+        <label>Correlation Id</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EffectiveEndDate__c</fullName>
+        <description>MDM</description>
+        <externalId>false</externalId>
+        <label>Effective End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>EffectiveStartDate__c</fullName>
+        <description>MDM</description>
+        <externalId>false</externalId>
+        <label>Effective Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Model_Group_search__c</fullName>
+        <description>This field is populated via trigger when a Role is created, and it is simply the value for VIN__c.Product__c.Model_Group__c . The reason why it is not a formula is because when doing Lookup search (e.g. from a case), the search will not consider formula fields</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Model</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Model_Year_search__c</fullName>
+        <description>This field is populated via trigger when a Role is created, and it is simply the value for VIN__c.Product__c.Model_Year__c . The reason why it is not a formula is because when doing Lookup search (e.g. from a case), the search will not consider formula fields. Also, the length suggestion should be 4 characters, but it was already set to 5 in the Product__c object.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Model Year</label>
+        <length>5</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PartyProductRoleLastUpdateDate__c</fullName>
+        <description>MDM</description>
+        <externalId>false</externalId>
+        <label>Party Product Role Last Update Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>PartyProductRoleLastUpdateUser__c</fullName>
+        <description>MDM</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Party Product Role Last Update User</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ProductValue__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>VIN__r.ProductValue__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Value</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Line__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>VIN__r.Product_Line__c</formula>
+        <label>Product Line</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Line_search__c</fullName>
+        <description>This field is populated via trigger when a Role is created, and it is simply the value for VIN__c.Product__c.Product_Line__c. The reason why it is not a formula is because when doing Lookup search (e.g. from a case), the search will not consider formula fields</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Product Line</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RoleValue__c</fullName>
+        <externalId>false</externalId>
+        <label>Role Value</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Additional Driver</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Buyer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cobuyer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Colesse</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Coowner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Emergency Contact</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Guarantor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lesse</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lessor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Owner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Previous Owner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Primary Driver</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Servicer</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Subscriber</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Warrantee</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Role_Value_search__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Role Value search</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>UCID__c</fullName>
+        <description>Formula lookup to the UCID.  This is sent in the Workflow outbound message to MDM.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>Contact__r.UCID__c</formula>
+        <label>UCID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VIN_Serial_No__c</fullName>
+        <description>Formula lookup to the VIN/Serial #. This is sent in the Workflow outbound message to MDM.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>VIN__r.ProductSerialNumber__c</formula>
+        <inlineHelpText>Formula lookup to the VIN/Serial #</inlineHelpText>
+        <label>VIN/Serial #</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VIN_Serial_No_search__c</fullName>
+        <description>This field is populated via trigger when a Role is created, and it is simply the value for VIN__c.ProductSerialNumber__c . The reason why it is not a formula is because when doing Lookup search (e.g. from a case), the search will not consider formula fields</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>VIN/Serial #</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VIN__c</fullName>
+        <externalId>false</externalId>
+        <label>VIN</label>
+        <referenceTo>VIN__c</referenceTo>
+        <relationshipLabel>Customer Roles</relationshipLabel>
+        <relationshipName>Customer_Roles</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <label>Customer Role</label>
+    <nameField>
+        <displayFormat>Role-{000000}</displayFormat>
+        <label>Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Customer Roles</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>VIN_Serial_No__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Model_Year_search__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Product_Line_search__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Model_Group_search__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Contact__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>RoleValue__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>VIN_Serial_No__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Product_Line__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Model_Year_search__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Model_Group_search__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Contact__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>RoleValue__c</lookupPhoneDialogsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Cannot_Create_CustomerRole</fullName>
+        <active>true</active>
+        <description>Cannot create a customer role if a contact does not have a primary Address, a primary email, or a primary phone.</description>
+        <errorConditionFormula>NOT(BEGINS($Profile.Name, &quot;API -&quot;)) &amp;&amp; NOT( ISBLANK( Contact__r.Id) ) &amp;&amp; (ISBLANK(Contact__r.Phone) &amp;&amp;  ISBLANK( Contact__r.Email) &amp;&amp;  ISBLANK( Contact__r.MailingCity) &amp;&amp; ISBLANK(Contact__r.MailingCountry))</errorConditionFormula>
+        <errorMessage>Cannot create a customer role if a contact does not have a primary Address, a primary email, or a primary phone.</errorMessage>
+    </validationRules>
+</CustomObject>

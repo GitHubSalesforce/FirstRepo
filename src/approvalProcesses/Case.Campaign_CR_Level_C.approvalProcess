@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>CaseNumber</field>
+        <field>Owner</field>
+        <field>CreatedDate</field>
+        <field>Sales_Credit__c</field>
+        <field>Service_Credit__c</field>
+        <field>Reimbursement__c</field>
+        <field>Buy_Back__c</field>
+        <field>Trade_Assist__c</field>
+        <field>Judgment__c</field>
+        <field>Settlement__c</field>
+        <field>Honda_Acura__c</field>
+        <field>Other_Contribution__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Customer_Relations_Supervisors</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>Total_Amount__c &gt; 1000</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>Campaign - CR - Level C - Step 1</label>
+        <name>Campaign_CR_Level_C_Step_1</name>
+    </approvalStep>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>ISPICKVAL(Group__c , &quot;Customer Relations&quot;) &amp;&amp;  RecordType.DeveloperName == &quot;CH_Customer_Relations_Campaign&quot; &amp;&amp; $Permission.Customer_Relations_Campaign_C &amp;&amp; NOT(ISPICKVAL(Status, &quot;Closed&quot;) || ISPICKVAL(Status, &quot;Cancelled&quot;)) &amp;&amp; Total_Amount__c &gt; 0 &amp;&amp; Total_Amount__c &lt;= 3000</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Process_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Process_Declined</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Process_Pending</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Campaign - CR - Level C</label>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

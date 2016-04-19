@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HFS Financial Account</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HFS Financial Accounts</value>
+    </caseValues>
+    <fields>
+        <label><!-- HFS Account Number --></label>
+        <name>AcctNum__c</name>
+    </fields>
+    <fields>
+        <label><!-- HFS Account Status --></label>
+        <name>AcctStsCd__c</name>
+    </fields>
+    <fields>
+        <label><!-- HFS Account Status Date Stamp --></label>
+        <name>AcctStsDt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Balloon Financial Code --></label>
+        <name>BalloonCd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Maturity Date --></label>
+        <name>CurMaturityDt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Payment Amount --></label>
+        <name>CurPaymtAmt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Contract Term --></label>
+        <name>CurTrm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Number --></label>
+        <name>CustNum__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer Code --></label>
+        <name>DealrCd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer ID --></label>
+        <name>DealrId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Door Type Code --></label>
+        <name>DoorTypCd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Extensions --></label>
+        <name>ExtnCnt__c</name>
+    </fields>
+    <fields>
+        <label><!-- HFS Account Type --></label>
+        <name>FinclAcctCd__c</name>
+    </fields>
+    <fields>
+        <label><!-- FinclCustAcctId --></label>
+        <name>FinclCustAcctId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Start Date --></label>
+        <name>LoanEntryDt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Interest Rate --></label>
+        <name>LoanRt__c</name>
+    </fields>
+    <fields>
+        <label><!-- MakeCd --></label>
+        <name>MakeCd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model Code --></label>
+        <name>MdlCd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model Year --></label>
+        <name>MdlYr__c</name>
+    </fields>
+    <fields>
+        <label><!-- Link to Customer --></label>
+        <name>MdmUcid__c</name>
+        <relationshipLabel><!-- HFS Financial Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- New / Use Code --></label>
+        <name>NewUsedCd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Contract Amount --></label>
+        <name>OriglLoanAmt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Interest Rate --></label>
+        <name>OriglLoanRt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Payments Made --></label>
+        <name>PaymtMadeCnt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Payments Remaining --></label>
+        <name>PaymtRmvdCnt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Payoff Amount --></label>
+        <name>PayoffAmt__c</name>
+    </fields>
+    <fields>
+        <label><!-- VIN / Serial # --></label>
+        <name>Vin__c</name>
+        <relationshipLabel><!-- HFS Financial Accounts --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>FinancialCustomerAccounts Layout</layout>
+        <sections>
+            <label><!-- Contract Information --></label>
+            <section>Contract Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer &amp; Dealer Information --></label>
+            <section>Customer &amp; Dealer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Payment &amp; Interest Rate Information --></label>
+            <section>Payment &amp; Interest Rate Information</section>
+        </sections>
+        <sections>
+            <label><!-- VIN / Serial # Information --></label>
+            <section>VIN / Serial # Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

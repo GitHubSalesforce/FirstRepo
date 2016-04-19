@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>CaseNumber</field>
+        <field>Owner</field>
+        <field>CreatedDate</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Customer_Service_Managers</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>Goodwill_Amount__c &gt; 10000</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>GW - Collections - Team Leader - Dollar - Ladder - Step 1</label>
+        <name>GW_Collections_Team_Leader_Dollar_Ladder_Step_1</name>
+    </approvalStep>
+    <description>This is the ladder process of the approval</description>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>(ISPICKVAL(Group__c, &quot;Collections&quot;) || ISPICKVAL(Group__c, &quot;Recovery Centre&quot;) ||ISPICKVAL(Group__c, &quot;Resolution Centre&quot;)) &amp;&amp; $UserRole.DeveloperName == &quot;Collections_Recovery_and_Resolution_Centre_Team_Leader&quot; &amp;&amp; NOT(ISPICKVAL(Status, &quot;Closed&quot;) || ISPICKVAL(Status, &quot;Cancelled&quot;)) &amp;&amp; Goodwill_Amount__c &gt; 10000 &amp;&amp; ISPICKVAL(Category_Level_2__c, &quot;Dollar&quot;)</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Change_Owner_to_Customer_Accounting</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Process_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Process_Declined</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Process_Pending</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>GW - Coll- Team Leader - Ladder - Dollar</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recallActions>
+        <action>
+            <name>Process_Open</name>
+            <type>FieldUpdate</type>
+        </action>
+    </recallActions>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

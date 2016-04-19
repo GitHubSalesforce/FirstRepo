@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CASS Number</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CASS Numbers</value>
+    </caseValues>
+    <fields>
+        <label><!-- AdminSystemValue --></label>
+        <name>AdminSystemValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cass No --></label>
+        <name>Cass_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- ContEquivLastUpdateDate --></label>
+        <name>ContEquivLastUpdateDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- ContEquivLastUpdateUser --></label>
+        <name>ContEquivLastUpdateUser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- CASS Numbers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Effective End Date --></label>
+        <name>XEffectiveEndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Start Date --></label>
+        <name>XEffectiveStartDate__c</name>
+    </fields>
+    <layouts>
+        <layout>CASS Number Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

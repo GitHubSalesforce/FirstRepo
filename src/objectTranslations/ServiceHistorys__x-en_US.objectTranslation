@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Service History</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Service History</value>
+    </caseValues>
+    <fields>
+        <label><!-- Customer Total Paid --></label>
+        <name>CustPayTotPr__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Collection Status --></label>
+        <name>DataCllctnSts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer Code --></label>
+        <name>DealrCd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer Hourly Labour Rate --></label>
+        <name>DealrLabRt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Make --></label>
+        <name>DmsMakeCd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exception Code --></label>
+        <name>ExcptnCd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Honda Canada Total Paid --></label>
+        <name>IntrnlTotPurchAmt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Labour Customer Paid Amount --></label>
+        <name>LabCustPaidAmt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Labour Internal Paid Amount --></label>
+        <name>LbrIntrnlPaidAmt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Labour Warranty Paid Amount --></label>
+        <name>LbrWrntyPaidAmt__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Plate Number --></label>
+        <name>LicnsPlateNum__c</name>
+    </fields>
+    <fields>
+        <label><!-- LocId --></label>
+        <name>LocId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model Type --></label>
+        <name>MdlTyp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model Year --></label>
+        <name>MdlYr__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mileage In --></label>
+        <name>MileageIn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mileage Out --></label>
+        <name>MileageOut__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous Customer Paid Amount --></label>
+        <name>MiscCustPaidAmt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous Internal Paid Amount --></label>
+        <name>MiscIntrnlPaidAmt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Miscellaneous Warranty Paid Amount --></label>
+        <name>MiscWrntyPaidAmt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parts Customer Paid Amount --></label>
+        <name>PartCustPaidAmt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parts Internal Paid Amount --></label>
+        <name>PartIntrnlPaidAmt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parts Warranty Paid Amount --></label>
+        <name>PartWrntyPaidAmt__c</name>
+    </fields>
+    <fields>
+        <label><!-- PartyId --></label>
+        <name>PartyId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repair Order Comment --></label>
+        <name>RoCmnt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repair Order Date --></label>
+        <name>RoDt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repair Order Number --></label>
+        <name>RoNum__c</name>
+    </fields>
+    <fields>
+        <label><!-- RoVin --></label>
+        <name>RoVin__c</name>
+        <relationshipLabel><!-- ServiceHistorys --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- RprEvntId --></label>
+        <name>RprEvntId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Dealer Code --></label>
+        <name>SrcDealrCd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Advisor ID Code --></label>
+        <name>SrvcEmpId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Advisor Name --></label>
+        <name>SrvcEmpName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Labour Paid Amount --></label>
+        <name>TotLbrPaidAmt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Miscellaneous Paid Amount --></label>
+        <name>TotMiscPaidAmt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Parts Paid Amount --></label>
+        <name>TotPartPaidAmt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tread Account Indicator --></label>
+        <name>TreadAcctInd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Link to Customer --></label>
+        <name>Ucid__c</name>
+        <relationshipLabel><!-- Service History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Warranty Total Paid --></label>
+        <name>WrntyTotPurchAmt__c</name>
+    </fields>
+    <layouts>
+        <layout>ServiceHistorys Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Paid Amount --></label>
+            <section>Customer Paid Amount</section>
+        </sections>
+        <sections>
+            <label><!-- Dealer Information --></label>
+            <section>Dealer Information</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+        <sections>
+            <label><!-- Honda Canada Paid Amount --></label>
+            <section>Honda Canada Paid Amount</section>
+        </sections>
+        <sections>
+            <label><!-- Repair Order Information --></label>
+            <section>Repair Order Information</section>
+        </sections>
+        <sections>
+            <label><!-- Total Paid Amount --></label>
+            <section>Total Paid Amount</section>
+        </sections>
+        <sections>
+            <label><!-- VIN / Serial # Information --></label>
+            <section>VIN / Serial # Information</section>
+        </sections>
+        <sections>
+            <label><!-- Warranty Paid Amount --></label>
+            <section>Warranty Paid Amount</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,2 @@
+<apex:page standardController="case" extensions="H_caseAutoPopulateController" action="{!redirectToPage}">
+</apex:page>

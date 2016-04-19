@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Honda Layout - Total Loss - Deficiency Letter - EN</name>
+    <style>none</style>
+    <subject>Total Loss - Deficiency Letter</subject>
+    <textOnly>Total Loss - Deficiency Letter 
+
+ Dear xxxxxxx 
+
+	By virtue of your Vehicle Conditional Sales Agreement dated xxxxxxx, your account is in default and your loan balance of $xxxx is now due in full.
+
+	Numerous attempts to contact you in regards to this matter have been unsuccessful to resolve and we are not prepared to continue with this situation. Therefore, please consider this letter as a formal demand for the entire arrears balance to be received in certified funds at the address listed below no later than date.
+
+	Please make payment payable to Honda Financial Services 
+	180 Honda Blvd, Suite 200 
+	Markham, Ontario
+	L6C 0H9 
+
+	Please include your full lease account number on the cheque.
+	If this date of demand is not met, please be advised that we will be opening a file with our legal counsel (3rd party collection agency) for collection of the entire loan balance plus probable interest and costs. Such action will have a derogatory effect on your credit report for 7 years, which will negatively affect your ability to obtain credit in the future.
+
+	Your prompt attention to this matter will save you considerable costs and inconvenience. Please ensure that you contact the undersigned before the deadline with details of the action you have taken to resolve this issue. 
+	Yours Sincerely, 
+
+
+
+ Collections &amp; Recovery Centre
+ Honda Financial Services
+ T: 1-800-387-6141| F: 1-800-210-6653 (QC: 1-877-6414179)
+ Monday - Friday 8am-8pm EST
+ hfs_collections@ch.honda.com 
+
+ Visitez notre site Web au www.myhonda.ca ou www.myacura.ca pour vous inscrire et avoir accès à votre compte en ligne dans la section « Mon Financement ».
+ __________________________
+
+This transmission (including attachments, if any) is confidential and may be privileged. It is intended only for the person(s) named above. Any other distribution, copying or disclosure whatsoever is STRICTLY PROHIBITED. If you have received this e-mail in error, please delete it and any attachments from your computer system and records.
+
+ Ce message (et les pièces qui y sont jointes, le cas échéant) est confidentiel et peut contenir des renseignements privilégiés. Il est destiné à l&apos;intention exclusive de la (des) personne(s) nommée(s) ci-dessus. Toute autre distribution, copie ou divulgation quelconque est STRICTEMENT INTERDITE. Si vous avez reçu ce message par erreur, veuillez éliminer ce message, ainsi que les pièces jointes, de votre système informatique et de vos dossiers. 
+
+************************************************************************ 
+
+Privacy Policy | Terms &amp; Conditions | Contact Us	
+ 
+This is a system email account, and unfortunately, replies to this email cannot be acknowledged. If you have any questions or comments please follow this Contact Us link.
+
+At Honda, we hold your personal information in strictest confidence, in accordance with federal and provincial guidelines. For further details on Honda&apos;s Customer Privacy Policy, please visit our Privacy Policy.
+
+You are receiving this email because you have asked us to notify you about Honda products and promotions. You are subscribed as [% member:email %]. To unsubscribe, please follow this Unsubscribe link.
+
+© {!YEAR(TODAY())} Honda Canada. 180 Honda Boulevard, Markham, ON, L6C 0H9, 1-888-946-6329
+
+All information contained herein applies to Canadian products only.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

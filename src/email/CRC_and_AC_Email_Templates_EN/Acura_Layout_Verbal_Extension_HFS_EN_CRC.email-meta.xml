@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Acura Layout - Verbal Extension - HFS - EN</name>
+    <style>none</style>
+    <subject>Verbal lease extension documents for (CUSTOMER NAME)</subject>
+    <textOnly>Verbal lease extension documents for (CUSTOMER NAME)  
+
+ PRIVATE AND CONFIDENTIAL
+
+ Dear Lessee, 
+
+ Thank you for allowing Acura Financial Services the opportunity to further accommodate your financing needs. Your lease extension has been processed and your payments will continue to be withdrawn on your regular payment due date. Please note that any missed payments on the account have been debited so please ensure funds are available.
+
+ Along with extending your lease, we are pleased to inform you that we have also extended your loyalty offers; you will continue to qualify for your 2% rate reduction on the purchase or lease of your next new Acura. 
+
+ Should you have any questions or concerns regarding this extension or any our promotions and loyalty offers, please contact Acura Concierge at 1-866-899-4440 ext. 7929 or by e-mail at concierge@acura.ca or your local Acura dealer.
+
+ Please find enclosed the signed extension and amending agreement for your lease with Acura Financial Services protected with the password you have provided. 
+
+
+ Sincerely, 
+
+ Acura Financial Services
+ Monday - Friday 8am-8pm EST
+
+ Please visit our owners&apos; website at www.myacura.ca, click on “MyFinance” to register and access your account online.
+ __________________________
+
+ This transmission (including attachments, if any) is confidential and may be privileged. It is intended only for the person(s) named above. Any other distribution, copying or disclosure whatsoever is STRICTLY PROHIBITED. If you have received this e-mail in error, please delete it and any attachments from your computer system and records.
+
+ Ce message (et les pièces qui y sont jointes, le cas échéant) est confidentiel et peut contenir des renseignements privilégiés. Il est destiné à l&apos;intention exclusive de la (des) personne(s) nommée(s) ci-dessus. Toute autre distribution, copie ou divulgation quelconque est STRICTEMENT INTERDITE. Si vous avez reçu ce message par erreur, veuillez éliminer ce message, ainsi que les pièces jointes, de votre système informatique et de vos dossiers.
+
+
+
+***********************************************************************
+Privacy Policy | Terms &amp; Conditions | Contact Us 
+
+This is a system email account, and unfortunately, replies to this email cannot be acknowledged. If you have any questions or comments please follow this Contact Us link: http://acura.ca/contact_us 
+
+At Acura, we hold your personal information in strictest confidence, in accordance with federal and provincial guidelines. For further details on Acura&apos;s Customer Privacy Policy, please visit our Privacy Policy Guidelines (http://acura.ca/privacy).
+
+You are receiving this email because you have asked us to notify you about Acura products and promotions. You are subscribed as {!EmailMessage.ToAddress}. To unsubscribe, please follow this Unsubscribe link: http://acura.ca/unsubscribe 
+
+© {!YEAR(TODAY())} Acura Canada. 180 Honda Boulevard, Markham, ON, L6C 0H9, 1-888-922-8729
+
+All information contained herein applies to Canadian products only.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

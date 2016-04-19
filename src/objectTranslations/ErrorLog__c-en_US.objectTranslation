@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ErrorLog</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>ErrorLogs</value>
+    </caseValues>
+    <fields>
+        <label><!-- BatchError --></label>
+        <name>BatchError__c</name>
+    </fields>
+    <fields>
+        <label><!-- BatchResult --></label>
+        <name>BatchResult__c</name>
+    </fields>
+    <fields>
+        <label><!-- ExternalCorrelationId --></label>
+        <name>ExternalCorrelationId__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsBatchProcessed --></label>
+        <name>IsBatchProcessed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Log Level --></label>
+        <name>Log_Level__c</name>
+        <picklistValues>
+            <masterLabel>DEBUG</masterLabel>
+            <translation><!-- DEBUG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ERROR</masterLabel>
+            <translation><!-- ERROR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FATAL</masterLabel>
+            <translation><!-- FATAL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TRACE</masterLabel>
+            <translation><!-- TRACE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WARN</masterLabel>
+            <translation><!-- WARN --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Message Short --></label>
+        <name>Message_Short__c</name>
+    </fields>
+    <fields>
+        <label><!-- Message --></label>
+        <name>Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notify Admin --></label>
+        <name>Notify_Admin__c</name>
+    </fields>
+    <fields>
+        <label><!-- RequestId --></label>
+        <name>RequestId__c</name>
+    </fields>
+    <fields>
+        <label><!-- RequesterName --></label>
+        <name>RequesterName__c</name>
+    </fields>
+    <fields>
+        <label><!-- ResultCode --></label>
+        <name>ResultCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- SF Contact Id --></label>
+        <name>SF_Contact_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- SObject --></label>
+        <name>SObject__c</name>
+    </fields>
+    <fields>
+        <label><!-- ServiceTime --></label>
+        <name>ServiceTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Code --></label>
+        <name>Status_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Apex</masterLabel>
+            <translation><!-- Apex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Async Operations</masterLabel>
+            <translation><!-- Async Operations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Batch</masterLabel>
+            <translation><!-- Batch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Mgmt</masterLabel>
+            <translation><!-- Call Mgmt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Callouts</masterLabel>
+            <translation><!-- Callouts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DML Operation</masterLabel>
+            <translation><!-- DML Operation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sharing</masterLabel>
+            <translation><!-- Sharing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Territory Mgmt</masterLabel>
+            <translation><!-- Territory Mgmt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webservice</masterLabel>
+            <translation><!-- Webservice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webservice (MDM) - Inbound</masterLabel>
+            <translation><!-- Webservice (MDM) - Inbound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webservice (MDM) - Outbound</masterLabel>
+            <translation><!-- Webservice (MDM) - Outbound --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>ErrorLog Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Full --></label>
+            <section>Full</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

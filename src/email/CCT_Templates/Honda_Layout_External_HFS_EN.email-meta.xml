@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>false</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Honda Layout - External - HFS - EN</name>
+    <style>none</style>
+    <subject>[SUBJECT GOES HERE]</subject>
+    <textOnly>[MAIN SUBJECT HERE] 
+
+[EMAIL BODY HERE] 
+
+************************************************************************ 
+
+Privacy Policy | Terms &amp; Conditions | Contact Us 
+
+This transmission (including attachments, if any) is confidential and may be privileged. It is intended only for the person(s) named above. Any other distribution, copying or disclosure whatsoever is STRICTLY PROHIBITED. If you have received this e-mail in error, please delete it and any attachments from your computer system and records. 
+
+At Honda, we hold your personal information in strictest confidence, in accordance with federal and provincial guidelines. For further details on Honda&apos;s Customer Privacy Policy, please visit our Privacy Policy Guidelines (http://honda.ca/privacy). 
+
+If you have any questions or comments please contact us at Honda Canada, 180 Honda Boulevard, Markham, ON, L6C 0H9, 1-800-387-5399. 
+
+© {!YEAR(TODAY())} All information contained herein applies to Canadian products only.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

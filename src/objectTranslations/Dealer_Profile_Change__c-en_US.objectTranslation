@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Dealer Profile Change</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Dealer Profile Changes</value>
+    </caseValues>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Dealer Profile Changes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Credit Line Change Type --></label>
+        <name>Credit_Line_Change_Type__c</name>
+        <picklistValues>
+            <masterLabel>Decrease</masterLabel>
+            <translation><!-- Decrease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase</masterLabel>
+            <translation><!-- Increase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reallocation</masterLabel>
+            <translation><!-- Reallocation --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Current Line Amount --></label>
+        <name>Current_Line_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Rate --></label>
+        <name>Current_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Line Amount --></label>
+        <name>New_Line_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Rate --></label>
+        <name>New_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Line --></label>
+        <name>Product_Line__c</name>
+        <picklistValues>
+            <masterLabel>Acura</masterLabel>
+            <translation><!-- Acura --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Honda</masterLabel>
+            <translation><!-- Honda --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Motorcycle (MC)</masterLabel>
+            <translation><!-- New Motorcycle (MC) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Power Equipment (PE)</masterLabel>
+            <translation><!-- Power Equipment (PE) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Used Auto</masterLabel>
+            <translation><!-- Used Auto --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Used Motorcycle (MC)</masterLabel>
+            <translation><!-- Used Motorcycle (MC) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Rate Change Type --></label>
+        <name>Rate_Change_Type__c</name>
+        <picklistValues>
+            <masterLabel>Decrease</masterLabel>
+            <translation><!-- Decrease --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Increase</masterLabel>
+            <translation><!-- Increase --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Dealer Profile Change Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

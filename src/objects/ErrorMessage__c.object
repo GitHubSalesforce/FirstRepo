@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Custom setting will hold the error message to be skipped from ErrorLog Batch</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>MessageShort__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>MessageShort</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>ErrorMessage</label>
+    <visibility>Public</visibility>
+</CustomObject>

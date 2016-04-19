@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Warranty Information</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Warranty Information</value>
+    </caseValues>
+    <fields>
+        <label><!-- Contract Approval Date --></label>
+        <name>CntrAprvlDt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Start Date --></label>
+        <name>CntrDt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Maturity Date --></label>
+        <name>CntrMaturityDt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Number --></label>
+        <name>CntrNum__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Option --></label>
+        <name>CntrOptCd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Status --></label>
+        <name>CntrStsCd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Status Last Updated --></label>
+        <name>CntrStsDt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Type --></label>
+        <name>CntrTypCd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Line --></label>
+        <name>PrdtLnCd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle Registration Date --></label>
+        <name>RgstrnDt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retail Dealer Code --></label>
+        <name>SoldDealrCd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warranty Dealer Code --></label>
+        <name>TransDealrCd__c</name>
+    </fields>
+    <fields>
+        <label><!-- VIN / Serial # --></label>
+        <name>Vin__c</name>
+        <relationshipLabel><!-- Warranty Information --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Warranty Plus ID --></label>
+        <name>WrntyPlusId__c</name>
+    </fields>
+    <layouts>
+        <layout>WarrantyInformations Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

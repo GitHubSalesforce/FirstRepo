@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Technical Assessment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Technical Assessments</value>
+    </caseValues>
+    <fields>
+        <label><!-- Affected Part --></label>
+        <name>Affected_Part__c</name>
+    </fields>
+    <fields>
+        <label><!-- Area of Vehicle --></label>
+        <name>Area_of_Vehicle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Technical Assessments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer&apos;s Disposition --></label>
+        <name>Customer_s_Disposition__c</name>
+        <picklistValues>
+            <masterLabel>Not Satisfied</masterLabel>
+            <translation><!-- Not Satisfied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Satisfied</masterLabel>
+            <translation><!-- Satisfied --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date Field FE Requested --></label>
+        <name>Date_Field_FE_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Inspection Scheduled --></label>
+        <name>Date_Inspection_Scheduled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Dealer: Account Record Type: Record Type Name --></help>
+        <label><!-- Dealer Contact --></label>
+        <lookupFilter>
+            <errorMessage><!-- You must select a Dealer contact. --></errorMessage>
+        </lookupFilter>
+        <name>Dealer_Contact__c</name>
+        <relationshipLabel><!-- Technical Assessments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Dealer Notified Date --></label>
+        <name>Dealer_Notified_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer --></label>
+        <lookupFilter>
+            <errorMessage><!-- You must select a Dealer account. --></errorMessage>
+        </lookupFilter>
+        <name>Dealer__c</name>
+        <relationshipLabel><!-- Technical Assessments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Diagnosis Date --></label>
+        <name>Diagnosis_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- FE Report # --></label>
+        <name>FE_Report_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- FE Specialist Assigned --></label>
+        <name>FE_Specialist_Assigned__c</name>
+        <picklistValues>
+            <masterLabel>Anthony Gray</masterLabel>
+            <translation><!-- Anthony Gray --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dan Arsenault</masterLabel>
+            <translation><!-- Dan Arsenault --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Martin Creasey</masterLabel>
+            <translation><!-- Martin Creasey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Michel Aubin</masterLabel>
+            <translation><!-- Michel Aubin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Michel Cuillerier</masterLabel>
+            <translation><!-- Michel Cuillerier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mike Menard</masterLabel>
+            <translation><!-- Mike Menard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shawn Johnson</masterLabel>
+            <translation><!-- Shawn Johnson --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Inspection Complete Date --></label>
+        <name>Inspection_Complete_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Magic Ticket # --></label>
+        <name>Magic_Ticket__c</name>
+    </fields>
+    <fields>
+        <label><!-- Root Cause --></label>
+        <name>Root_Cause__c</name>
+        <picklistValues>
+            <masterLabel>Aftermarket Repair/Service Induced</masterLabel>
+            <translation><!-- Aftermarket Repair/Service Induced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Body Shop Repair Related</masterLabel>
+            <translation><!-- Body Shop Repair Related --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Did Not Understand Feature</masterLabel>
+            <translation><!-- Customer Did Not Understand Feature --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Induced - Abuse</masterLabel>
+            <translation><!-- Customer Induced - Abuse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Induced - Not Maintained</masterLabel>
+            <translation><!-- Customer Induced - Not Maintained --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dealer Repair/Service Induced</masterLabel>
+            <translation><!-- Dealer Repair/Service Induced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Design Induced</masterLabel>
+            <translation><!-- Design Induced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did Not Follow Repair Instruction</masterLabel>
+            <translation><!-- Did Not Follow Repair Instruction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Did Not Follow Service Publication</masterLabel>
+            <translation><!-- Did Not Follow Service Publication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Environment Induced</masterLabel>
+            <translation><!-- External Environment Induced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Factory Defect</masterLabel>
+            <translation><!-- Factory Defect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OE Parts Failure</masterLabel>
+            <translation><!-- OE Parts Failure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recall Part Failure</masterLabel>
+            <translation><!-- Recall Part Failure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical Services Bulletin</masterLabel>
+            <translation><!-- Technical Services Bulletin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tools Issue</masterLabel>
+            <translation><!-- Tools Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vehicle Altered</masterLabel>
+            <translation><!-- Vehicle Altered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vehicle Disability Modified</masterLabel>
+            <translation><!-- Vehicle Disability Modified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vehicle Modified Performance</masterLabel>
+            <translation><!-- Vehicle Modified Performance --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Technical Comments --></label>
+        <name>Technical_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technical Symptoms Search --></label>
+        <name>Technical_Symptoms_Search__c</name>
+        <relationshipLabel><!-- Technical Assessments --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Dealer, CR Tech, Tech Line Page Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Field Engineering Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Fields --></label>
+            <section>Fields</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- CR Tech --></label>
+        <name>CR_Tech</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Dealer --></label>
+        <name>Dealer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Field Engineering --></label>
+        <name>Field_Engineering</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Tech Line --></label>
+        <name>Tech_Line</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

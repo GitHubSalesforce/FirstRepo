@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ContactMethodGroupLastUpdateDate__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Update</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>ContactMethodGroupLastUpdateUser__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Last Update User</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ContactMethodType__c</fullName>
+        <externalId>false</externalId>
+        <label>Type Code</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>100001</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ContactMethodUsageValue__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <picklist>
+            <controllingField>ContactMethodValue__c</controllingField>
+            <picklistValues>
+                <fullName>Home Telephone</fullName>
+                <controllingFieldValues>Telephone Number</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TCU</fullName>
+                <controllingFieldValues>Telephone Number</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Primary Email</fullName>
+                <controllingFieldValues>Email Address</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Secondary Email</fullName>
+                <controllingFieldValues>Email Address</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Primary Phone</fullName>
+                <controllingFieldValues>Telephone Number</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Garage Primary Phone</fullName>
+                <controllingFieldValues>Telephone Number</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Garage Business Phone</fullName>
+                <controllingFieldValues>Telephone Number</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Billing Primary Phone</fullName>
+                <controllingFieldValues>Telephone Number</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Billing Business Phone</fullName>
+                <controllingFieldValues>Telephone Number</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Evening Phone</fullName>
+                <controllingFieldValues>Telephone Number</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Day Phone</fullName>
+                <controllingFieldValues>Telephone Number</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Secondary Phone</fullName>
+                <controllingFieldValues>Telephone Number</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Business Telephone</fullName>
+                <controllingFieldValues>Telephone Number</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cellular</fullName>
+                <controllingFieldValues>Telephone Number</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mobile Telephone</fullName>
+                <controllingFieldValues>Telephone Number</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Facsimile</fullName>
+                <controllingFieldValues>Telephone Number</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Business Email</fullName>
+                <controllingFieldValues>Email Address</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Personal Email</fullName>
+                <controllingFieldValues>Email Address</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Home Telephone-Text</fullName>
+                <controllingFieldValues>Telephone Number</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Business Telephone-Text</fullName>
+                <controllingFieldValues>Telephone Number</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cellular-Text</fullName>
+                <controllingFieldValues>Telephone Number</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mobile Telephone-Text</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Primary Phone-Text</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Garage Primary Phone-Text</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Garage Business Phone-Text</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Billing Primary Phone-Text</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Billing Business Phone-Text</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Evening Phone-Text</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Day Phone-Text</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Secondary Phone-Text</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pager</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Facebook</fullName>
+                <controllingFieldValues>Social Media</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Twitter</fullName>
+                <controllingFieldValues>Social Media</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Instagram</fullName>
+                <controllingFieldValues>Social Media</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Youtube</fullName>
+                <controllingFieldValues>Social Media</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pinterest</fullName>
+                <controllingFieldValues>Social Media</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Linkedin</fullName>
+                <controllingFieldValues>Social Media</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Google Plus</fullName>
+                <controllingFieldValues>Social Media</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flickr</fullName>
+                <controllingFieldValues>Social Media</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ContactMethodValue__c</fullName>
+        <externalId>false</externalId>
+        <label>Method</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Telephone Number</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email Address</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Social Media</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Contact Methods</relationshipLabel>
+        <relationshipName>Contact_Method</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Correlation_Id__c</fullName>
+        <description>This will be sent back to Salesforce if MDM encounters an error.   It is a concatenation of the SF Id and Last Modified Date Time.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(TEXT(LastModifiedDate), &apos;Z&apos;, &apos;.&apos; + MID(TEXT(MOD(MOD(LastModifiedDate - $System.OriginDateTime, 1), 86400)), 3, 3)),&apos;-&apos;,&apos;&apos;),&apos;:&apos;,&apos;&apos;),&apos; &apos;,&apos;&apos;),&apos;.&apos;,&apos;&apos;)</formula>
+        <label>Correlation Id</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Created_from_New_contact_Page__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Created from New contact Page</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>EndDate__c</fullName>
+        <externalId>false</externalId>
+        <label>EndDate</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Invalid_Email__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Invalid Email</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ReferenceNumber__c</fullName>
+        <encrypted>true</encrypted>
+        <externalId>false</externalId>
+        <label>Value</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SolicitationIndicator__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Solicitation Indicator</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SourceIdentifierValue__c</fullName>
+        <externalId>false</externalId>
+        <label>Source</label>
+        <picklist>
+            <picklistValues>
+                <fullName>WARRANTY</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Retail Banking System</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Call Center Application</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Party</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Employee</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>On-Line Data Warehouse</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Administrative System</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Retail Data Warehouse</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Back Office System</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>D&amp;B</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Virtual MDM</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CASS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RDR NAMEADDRCHG</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RDR REGIST</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RDR TRANSFER</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RDR CRUPDATE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DEALERMASTER</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MODELMASTER</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CANADAPOST</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RECALLCAMPAIGN</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DMIRO</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MYACURAHOND</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>UDC</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ISKY</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MINACS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>DEALERPOSTALCODE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ZONE</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SALESFORCEEXACTTARGET</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SALEFORCEDESK2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RDR RTNMAIL</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MODELCATALOG</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TELEMATICS</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>KIKU</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>StartDate__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>UCID__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>UCID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Contact Method</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>CM-{0000}</displayFormat>
+        <label>Contact Method Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Contact Method</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>Contact__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ContactMethodValue__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ContactMethodUsageValue__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ReferenceNumber__c</lookupDialogsAdditionalFields>
+        <searchResultsAdditionalFields>ReferenceNumber__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>StartDate__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>EndDate__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Contact__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Cannot_Create_or_Update_ContactMethod</fullName>
+        <active>true</active>
+        <description>Cannot create a Contact Method if a contact does not have a primary email, or a primary phone.</description>
+        <errorConditionFormula>NOT(BEGINS($Profile.Name, &quot;API -&quot;)) &amp;&amp; Not(ISPICKVAL( ContactMethodUsageValue__c ,&apos;Primary Phone&apos;)) &amp;&amp; Not(ISPICKVAL( ContactMethodUsageValue__c ,&apos;Primary Email&apos;)) &amp;&amp; NOT(ISBLANK( Contact__r.Id)) &amp;&amp; (ISBLANK(Contact__r.Phone) &amp;&amp; ISBLANK(Contact__r.Email) &amp;&amp;  ISBLANK(Contact__r.MailingCity) &amp;&amp; ISBLANK(Contact__r.MailingCountry))</errorConditionFormula>
+        <errorMessage>Cannot create a Contact Method if a contact does not have a primary Address, a primary email, or a primary phone.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_Email_Address_Format</fullName>
+        <active>true</active>
+        <description>If Method = &quot;Email Address&quot;, the field Value should have an email address format</description>
+        <errorConditionFormula>IF(NOT(BEGINS($Profile.Name, &quot;API -&quot;)) &amp;&amp; NOT(ISBLANK(Text(ContactMethodValue__c))) &amp;&amp; ISPICKVAL(ContactMethodValue__c,&apos;Email Address&apos;), NOT(REGEX(ReferenceNumber__c ,&quot;[a-zA-Z0-9\\.\\!\\#\\$\\%\\&amp;\\*\\/\\=\\?\\^\\_\\+\\-\\`\\{\\|\\}\\~\&apos;._%+-]+@[a-zA-Z0-9\\-.-]+\\.[a-zA-Z]+&quot;)),false)</errorConditionFormula>
+        <errorDisplayField>ReferenceNumber__c</errorDisplayField>
+        <errorMessage>Not a valid Email Address format</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Start_Date_is_greater_than_End_Date</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(NOT(BEGINS($Profile.Name, &quot;API -&quot;)), StartDate__c &gt; EndDate__c )</errorConditionFormula>
+        <errorMessage>Start Date cannot be greater than End Date</errorMessage>
+    </validationRules>
+</CustomObject>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>ACM_Entitlement_Settings__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>ACM Entitlement Settings</label>
+        <referenceTo>ACM_Entitlement_Settings__c</referenceTo>
+        <relationshipLabel>Entitlements</relationshipLabel>
+        <relationshipName>Entitlements</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Campaign__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Campaign</label>
+        <referenceTo>Campaign</referenceTo>
+        <relationshipLabel>Entitlements</relationshipLabel>
+        <relationshipName>Entitlements</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Complimentary_Maintenance_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( IF(Campaign__c == NULL, ISPICKVAL( ACM_Entitlement_Settings__r.ACM_Duration_Unit__c , &apos;Years&apos;), ISPICKVAL( Campaign__r.Complimentary_Maintenance_Duration_Unit__c , &apos;Years&apos;)) , 
+        DATE(VIN_Start_Year__c + ACM_Entitlement_Settings__r.ACM_Duration__c,
+            VIN_Start_Month__c,
+            VIN_Start_Day__c), 
+    IF( IF(Campaign__c == NULL, ISPICKVAL( ACM_Entitlement_Settings__r.ACM_Duration_Unit__c , &apos;Months&apos;), ISPICKVAL( Campaign__r.Complimentary_Maintenance_Duration_Unit__c , &apos;Months&apos;)) , 
+        DATE(VIN_Start_Year__c,
+            VIN_Start_Month__c + ACM_Entitlement_Settings__r.ACM_Duration__c,
+            VIN_Start_Day__c), 
+    IF( IF(Campaign__c == NULL, ISPICKVAL( ACM_Entitlement_Settings__r.ACM_Duration_Unit__c , &apos;Days&apos;), ISPICKVAL( Campaign__r.Complimentary_Maintenance_Duration_Unit__c , &apos;Days&apos;)) , 
+        DATE(VIN_Start_Year__c,
+            VIN_Start_Month__c,
+            VIN_Start_Day__c+ ACM_Entitlement_Settings__r.ACM_Duration__c), 
+
+        NULL)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Complimentary Maintenance End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Complimentary_Maintenance_KM_Limit__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Campaign__c == NULL,ACM_Entitlement_Settings__r.ACM_KM_Limit__c ,Campaign__r.Complimentary_Maintenance_KM_Limit__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Complimentary Maintenance KM Limit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Complimentary_Maintenance_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>VIN__r.Retail_Process_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Complimentary Maintenance Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Main_Symbols__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>IF( IF(Campaign__c == NULL,INCLUDES(ACM_Entitlement_Settings__r.Main_Symbols__c  , &quot;A&quot;),INCLUDES(Campaign__r.Main_Symbols__c  , &quot;A&quot;)) , &quot;A; &quot;,&quot;&quot;)
+&amp;
+IF( IF(Campaign__c == NULL,INCLUDES(ACM_Entitlement_Settings__r.Main_Symbols__c  , &quot;A&quot;),INCLUDES(Campaign__r.Main_Symbols__c  , &quot;B&quot;)) , &quot;B; &quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Main Symbols</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sub_Symbols__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <formula>IF( IF(Campaign__c == NULL,INCLUDES(ACM_Entitlement_Settings__r.Sub_Symbols__c  , &quot;1&quot;),INCLUDES(Campaign__r.Sub_Symbols__c  , &quot;1&quot;)), &quot;1; &quot;,&quot;&quot;)
+&amp;
+IF( IF(Campaign__c == NULL,INCLUDES(ACM_Entitlement_Settings__r.Sub_Symbols__c  , &quot;2&quot;),INCLUDES(Campaign__r.Sub_Symbols__c  , &quot;2&quot;)), &quot;2; &quot;,&quot;&quot;)
+&amp;
+IF( IF(Campaign__c == NULL,INCLUDES(ACM_Entitlement_Settings__r.Sub_Symbols__c  , &quot;3&quot;),INCLUDES(Campaign__r.Sub_Symbols__c  , &quot;3&quot;)), &quot;3; &quot;,&quot;&quot;)
+&amp;
+IF( IF(Campaign__c == NULL,INCLUDES(ACM_Entitlement_Settings__r.Sub_Symbols__c  , &quot;4&quot;),INCLUDES(Campaign__r.Sub_Symbols__c  , &quot;4&quot;)), &quot;4; &quot;,&quot;&quot;)
+&amp;
+IF( IF(Campaign__c == NULL,INCLUDES(ACM_Entitlement_Settings__r.Sub_Symbols__c  , &quot;5&quot;),INCLUDES(Campaign__r.Sub_Symbols__c  , &quot;5&quot;)), &quot;5; &quot;,&quot;&quot;)
+&amp;
+IF( IF(Campaign__c == NULL,INCLUDES(ACM_Entitlement_Settings__r.Sub_Symbols__c  , &quot;6&quot;),INCLUDES(Campaign__r.Sub_Symbols__c  , &quot;6&quot;)), &quot;6; &quot;,&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sub Symbols</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VIN_Start_Day__c</fullName>
+        <description>Used for the Complimentary Maintenance End Date formula field.</description>
+        <externalId>false</externalId>
+        <formula>DAY(VIN__r.Retail_Process_Date__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>VIN Start Day</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VIN_Start_Month__c</fullName>
+        <description>Used for the Complimentary Maintenance End Date formula field.</description>
+        <externalId>false</externalId>
+        <formula>MONTH(VIN__r.Retail_Process_Date__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>VIN Start Month</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VIN_Start_Year__c</fullName>
+        <description>Used for the Complimentary Maintenance End Date formula field.</description>
+        <externalId>false</externalId>
+        <formula>YEAR(VIN__r.Retail_Process_Date__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>VIN Start Year</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>VIN__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>VIN/Serial #</label>
+        <referenceTo>VIN__c</referenceTo>
+        <relationshipLabel>Entitlements</relationshipLabel>
+        <relationshipName>Entitlements</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Entitlement</label>
+    <nameField>
+        <displayFormat>E-{00000000}</displayFormat>
+        <label>Entitlement Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Entitlements</pluralLabel>
+    <recordTypes>
+        <fullName>Acura_Complimentary_Maintenance</fullName>
+        <active>true</active>
+        <label>Acura Complimentary Maintenance</label>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

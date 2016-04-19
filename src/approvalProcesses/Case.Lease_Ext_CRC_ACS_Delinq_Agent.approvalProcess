@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>false</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>CaseNumber</field>
+        <field>Owner</field>
+        <field>CreatedDate</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>CRC_and_Acura_Concierge_Supervisors</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <label>Lease Extension - CRC/ACS - Delinquent - Step 1</label>
+        <name>Lease_Extension_CRC_ACS_Delinquent_Step_1</name>
+    </approvalStep>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>CRC_and_Acura_Concierge_Managers</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>INCLUDES(Lease_Extension_Considerations__c, &quot;6+ Months Extension&quot;)</formula>
+        </entryCriteria>
+        <label>Lease Extension - CRC/ACS - Delinquent - Step 2</label>
+        <name>Lease_Extension_CRC_ACS_Delinquent_Step_2</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>ISPICKVAL(Category_Level_1__c, &quot;Retention&quot;) &amp;&amp; ISPICKVAL(Category_Level_2__c, &quot;Extensions&quot;) &amp;&amp; $UserRole.DeveloperName == &quot;Customer_Retention_Centre_Agent&quot; &amp;&amp;(INCLUDES(Lease_Extension_Considerations__c, &quot;Twice Past 30 Days Delinquent&quot;) || INCLUDES(Lease_Extension_Considerations__c, &quot;Bankruptcy Account&quot;) || INCLUDES(Lease_Extension_Considerations__c, &quot;Consumer Proposal Account&quot;))</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Lease_Extension_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Lease_Extension_Declined</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Lease_Extension_Pending</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Lease Ext - CRC/ACS - Delinq - Agent</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

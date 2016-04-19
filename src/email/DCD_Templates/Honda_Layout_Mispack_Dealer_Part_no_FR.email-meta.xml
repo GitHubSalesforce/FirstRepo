@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Honda Layout - Mispack Dealer: Part no: - FR</name>
+    <style>none</style>
+    <subject>Mispack Concessionnaire: No de pièce:</subject>
+    <textOnly>Mispack Concessionnaire: No de pièce:  
+
+ Nous vous remercions de votre appel pour nous signaler ce mispack. SVP retourner l&apos;information demandé ci-dessous par couriel.
+
+ Numéro de la pièce :
+ NIV (no de série) :
+ Combien de mauvaise pièce avez-vous reçu :
+ SVP écrire les numéro de JD/lot pour chacune des mauvaises pièces reçues :
+ Y a-t-il des étiquettes / marques / estampage sur la pièce d&apos;origine?
+ Y a-t-il des étiquettes / marques / estampage sur la pièce reçue?
+
+ Photos requises (celles-ci doivent être claires)
+
+ Étiquette de pièce Honda;
+ Tout autre étiquette sur la pièce;
+ Estampage/marques sur les pièces (pièce d&apos;origine et pièce reçues);
+ Photo de la pièce d&apos;origine et de la pièce reçue côte à côte, même
+ angle, même distance;
+ Photo montrant la zone problématique;
+ Photo montrant la pièce entière.
+
+ SVP ne pas faire de demande de crédit ni recommander la pièce jusqu&apos;à ce que notre investigation soit complète.
+ Décrire dans vos mots quel est le problème avec la pièce.
+ À noter, s&apos;il s&apos;agit d&apos;une difference de grandeur, veillez nous donner les dimensoins de la pièce d&apos;origine ainsi que celles de la pièce reçues et indiquer sur photo où ces mesures sont prises.  
+
+************************************************************************ 
+
+Politique de confidentialité | Conditions | Contactez-nous 
+
+Ce courriel est généré par un système automatisé qui ne peut malheureusement pas procurer de réponse, ni d’accusé de réception. Si vous avez des questions ou des commentaires, veuillez suivre le lien Contactez-nous: http://acura.ca/contact_us. 
+
+Acura conserve vos renseignements personnels dans la plus stricte confidentialité, conformément aux directives fédérales et provinciales en vigueur. Pour de plus amples détails sur la Politique d&apos;Acura concernant la protection de la vie privée de la clientèle, veuillez consulter les lignes directrices concernant notre Politique de confidentialité: http://acura.ca/privacy. 
+
+© {!YEAR(TODAY())} Acura Canada. 180, boulevard Honda, Markham (Ontario) L6C 0H9, 1-888-922-8729 
+
+Toute l&apos;information contenue dans ce courriel s&apos;applique uniquement aux véhicules canadiens.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

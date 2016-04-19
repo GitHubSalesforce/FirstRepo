@@ -1,0 +1,1085 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- AdminSystemType --></label>
+        <name>AdminSystemType__c</name>
+    </fields>
+    <fields>
+        <label><!-- AdminSystemValue --></label>
+        <name>AdminSystemValue__c</name>
+        <picklistValues>
+            <masterLabel>Admin System 1</masterLabel>
+            <translation><!-- Admin System 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Admin System 2</masterLabel>
+            <translation><!-- Admin System 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Admin System 3</masterLabel>
+            <translation><!-- Admin System 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CANADAPOST</masterLabel>
+            <translation><!-- CANADAPOST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CASS</masterLabel>
+            <translation><!-- CASS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DMIRO</masterLabel>
+            <translation><!-- DMIRO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISKY</masterLabel>
+            <translation><!-- ISKY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KIKU</masterLabel>
+            <translation><!-- KIKU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MDM</masterLabel>
+            <translation><!-- MDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINACS</masterLabel>
+            <translation><!-- MINACS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MYACURAHOND</masterLabel>
+            <translation><!-- MYACURAHOND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RDR CRUPDATE</masterLabel>
+            <translation><!-- RDR CRUPDATE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RDR NAMEADDRCHG</masterLabel>
+            <translation><!-- RDR NAMEADDRCHG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RDR REGIST</masterLabel>
+            <translation><!-- RDR REGIST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RDR RTNMAIL</masterLabel>
+            <translation><!-- RDR RTNMAIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RDR TRANSFER</masterLabel>
+            <translation><!-- RDR TRANSFER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RDR UNTMAINT</masterLabel>
+            <translation><!-- RDR UNTMAINT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RECALLCAMPAIGN</masterLabel>
+            <translation><!-- RECALLCAMPAIGN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALEFORCEDESK2</masterLabel>
+            <translation><!-- SALEFORCEDESK2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALESFORCEEXACTTARGET</masterLabel>
+            <translation><!-- SALESFORCEEXACTTARGET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TELEMATICS</masterLabel>
+            <translation><!-- TELEMATICS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UDC</masterLabel>
+            <translation><!-- UDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WARRANTY</masterLabel>
+            <translation><!-- WARRANTY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Collapsed UCIDs --></label>
+        <name>Collapsed_UCIDs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Correlation Id --></label>
+        <name>Correlation_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Loyalty Score --></label>
+        <name>CustomerLoyaltyScore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dealer Email --></label>
+        <name>DLR_Email__c</name>
+        <picklistValues>
+            <masterLabel>NO</masterLabel>
+            <translation><!-- NO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YES</masterLabel>
+            <translation><!-- YES --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dealer Mail --></label>
+        <name>DLR_Mail__c</name>
+        <picklistValues>
+            <masterLabel>NO</masterLabel>
+            <translation><!-- NO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YES</masterLabel>
+            <translation><!-- YES --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dealer Phone Text --></label>
+        <name>DLR_Phone_Text__c</name>
+        <picklistValues>
+            <masterLabel>NO</masterLabel>
+            <translation><!-- NO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YES</masterLabel>
+            <translation><!-- YES --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dealer Phone Voice --></label>
+        <name>DLR_Phone_Voice__c</name>
+        <picklistValues>
+            <masterLabel>NO</masterLabel>
+            <translation><!-- NO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YES</masterLabel>
+            <translation><!-- YES --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dealer Social Media --></label>
+        <name>DLR_Social_Media__c</name>
+        <picklistValues>
+            <masterLabel>NO</masterLabel>
+            <translation><!-- NO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YES</masterLabel>
+            <translation><!-- YES --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Dealer Look-up Postal Code --></label>
+        <name>Dealer_Look_up_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee Status --></label>
+        <name>Employee_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Finance Dealer Name --></label>
+        <name>Finance_Dealer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance Dealer --></label>
+        <name>Finance_dealer__c</name>
+        <relationshipLabel><!-- Finance dealer --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>Gender__c</name>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation><!-- F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M</masterLabel>
+            <translation><!-- M --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CH Email --></label>
+        <name>HC_Email__c</name>
+        <picklistValues>
+            <masterLabel>NO</masterLabel>
+            <translation><!-- NO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YES</masterLabel>
+            <translation><!-- YES --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CH Mail --></label>
+        <name>HC_Mail__c</name>
+        <picklistValues>
+            <masterLabel>NO</masterLabel>
+            <translation><!-- NO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YES</masterLabel>
+            <translation><!-- YES --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CH Phone Text --></label>
+        <name>HC_Phone_Text__c</name>
+        <picklistValues>
+            <masterLabel>NO</masterLabel>
+            <translation><!-- NO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YES</masterLabel>
+            <translation><!-- YES --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CH Phone Voice --></label>
+        <name>HC_Phone_Voice__c</name>
+        <picklistValues>
+            <masterLabel>NO</masterLabel>
+            <translation><!-- NO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YES</masterLabel>
+            <translation><!-- YES --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CH Social Media --></label>
+        <name>HC_Social_Media__c</name>
+        <picklistValues>
+            <masterLabel>NO</masterLabel>
+            <translation><!-- NO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YES</masterLabel>
+            <translation><!-- YES --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HFS Email --></label>
+        <name>HFS_Email__c</name>
+        <picklistValues>
+            <masterLabel>NO</masterLabel>
+            <translation><!-- NO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YES</masterLabel>
+            <translation><!-- YES --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HFS Mail --></label>
+        <name>HFS_Mail__c</name>
+        <picklistValues>
+            <masterLabel>NO</masterLabel>
+            <translation><!-- NO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YES</masterLabel>
+            <translation><!-- YES --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HFS Phone Text --></label>
+        <name>HFS_Phone_Text__c</name>
+        <picklistValues>
+            <masterLabel>NO</masterLabel>
+            <translation><!-- NO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YES</masterLabel>
+            <translation><!-- YES --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HFS Phone Voice --></label>
+        <name>HFS_Phone_Voice__c</name>
+        <picklistValues>
+            <masterLabel>NO</masterLabel>
+            <translation><!-- NO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YES</masterLabel>
+            <translation><!-- YES --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HFS Social Media --></label>
+        <name>HFS_Social_Media__c</name>
+        <picklistValues>
+            <masterLabel>NO</masterLabel>
+            <translation><!-- NO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>YES</masterLabel>
+            <translation><!-- YES --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Has Active HFS Account --></label>
+        <name>Has_Active_HFS_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Title (Current) --></label>
+        <name>Job_Title_Current__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Title (Previous) --></label>
+        <name>Job_Title_Previous__c</name>
+    </fields>
+    <fields>
+        <label><!-- Language Code --></label>
+        <name>Language_Code__c</name>
+    </fields>
+    <fields>
+        <name>LeadSource</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Referral</masterLabel>
+            <translation><!-- Partner Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Inquiry</masterLabel>
+            <translation><!-- Phone Inquiry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchased List</masterLabel>
+            <translation><!-- Purchased List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Legal Given Name One --></label>
+        <name>LegalGivenNameOne__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Given Name Two --></label>
+        <name>LegalGivenNameTwo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Salutation --></label>
+        <name>LegalSalutation__c</name>
+        <picklistValues>
+            <masterLabel>Colonel</masterLabel>
+            <translation><!-- Colonel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Doctor</masterLabel>
+            <translation><!-- Doctor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Father</masterLabel>
+            <translation><!-- Father --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General</masterLabel>
+            <translation><!-- General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Honorable</masterLabel>
+            <translation><!-- Honorable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lieutenant</masterLabel>
+            <translation><!-- Lieutenant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lieutenant Colonel</masterLabel>
+            <translation><!-- Lieutenant Colonel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lieutenant General</masterLabel>
+            <translation><!-- Lieutenant General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major</masterLabel>
+            <translation><!-- Major --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Major General</masterLabel>
+            <translation><!-- Major General --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Master</masterLabel>
+            <translation><!-- Master --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Master Sergeant</masterLabel>
+            <translation><!-- Master Sergeant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miss</masterLabel>
+            <translation><!-- Miss --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mother</masterLabel>
+            <translation><!-- Mother --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mr.</masterLabel>
+            <translation><!-- Mr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mrs.</masterLabel>
+            <translation><!-- Mrs. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ms.</masterLabel>
+            <translation><!-- Ms. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pastor</masterLabel>
+            <translation><!-- Pastor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prince</masterLabel>
+            <translation><!-- Prince --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Princess</masterLabel>
+            <translation><!-- Princess --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Professor</masterLabel>
+            <translation><!-- Professor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rabbi</masterLabel>
+            <translation><!-- Rabbi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reverend</masterLabel>
+            <translation><!-- Reverend --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reverend Father</masterLabel>
+            <translation><!-- Reverend Father --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sergeant</masterLabel>
+            <translation><!-- Sergeant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sergeant Major</masterLabel>
+            <translation><!-- Sergeant Major --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sister</masterLabel>
+            <translation><!-- Sister --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Legal Last Name --></label>
+        <name>Legal_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDM Primary Address AddressUsageValue --></label>
+        <name>MDM_Primary_Address_AddressUsageValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDM Primary Address Start Date --></label>
+        <name>MDM_Primary_Address_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDM Primary Email ContactMethodUsageValu --></label>
+        <name>MDM_Primary_Email_ContactMethodUsageValu__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDM Primary Email ContactMethodValue --></label>
+        <name>MDM_Primary_Email_ContactMethodValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDM Primary Email Start Date --></label>
+        <name>MDM_Primary_Email_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDM Primary Phone ContactMethodUsageValu --></label>
+        <name>MDM_Primary_Phone_ContactMethodUsageValu__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDM Primary Phone ContactMethodValue --></label>
+        <name>MDM_Primary_Phone_ContactMethodValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDM Primary Phone Start Date --></label>
+        <name>MDM_Primary_Phone_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- MaritalStatusValue --></label>
+        <name>MaritalStatusValue__c</name>
+        <picklistValues>
+            <masterLabel>Common Law</masterLabel>
+            <translation><!-- Common Law --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Divorced</masterLabel>
+            <translation><!-- Divorced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Married</masterLabel>
+            <translation><!-- Married --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Separated</masterLabel>
+            <translation><!-- Separated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single</masterLabel>
+            <translation><!-- Single --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Widowed</masterLabel>
+            <translation><!-- Widowed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Organization Name --></label>
+        <name>OrganizationName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organization Value --></label>
+        <name>OrganizationValue__c</name>
+        <picklistValues>
+            <masterLabel>Charity</masterLabel>
+            <translation><!-- Charity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporation</masterLabel>
+            <translation><!-- Corporation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Estate</masterLabel>
+            <translation><!-- Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Immobilier</masterLabel>
+            <translation><!-- Immobilier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Will Trust</masterLabel>
+            <translation><!-- Last Will Trust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Living Trust</masterLabel>
+            <translation><!-- Living Trust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualified Plan Trust</masterLabel>
+            <translation><!-- Qualified Plan Trust --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PartyLastUpdateDate --></label>
+        <name>PartyLastUpdateDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- PartyLastUpdateUser --></label>
+        <name>PartyLastUpdateUser__c</name>
+    </fields>
+    <fields>
+        <label><!-- PartyType --></label>
+        <name>PartyType__c</name>
+    </fields>
+    <fields>
+        <label><!-- PersonLastUpdateDate --></label>
+        <name>PersonLastUpdateDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- PersonLastUpdateUser --></label>
+        <name>PersonLastUpdateUser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone Search --></label>
+        <name>Phone_Search__c</name>
+    </fields>
+    <fields>
+        <label><!-- PreferredDealerValue --></label>
+        <name>PreferredDealerValue__c</name>
+        <picklistValues>
+            <masterLabel>Original Dealer Code</masterLabel>
+            <translation><!-- Original Dealer Code --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Language Preference --></label>
+        <name>PreferredLanguage__c</name>
+        <picklistValues>
+            <masterLabel>Albanian</masterLabel>
+            <translation><!-- Albanian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Arabic</masterLabel>
+            <translation><!-- Arabic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Belarusian</masterLabel>
+            <translation><!-- Belarusian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bulgarian</masterLabel>
+            <translation><!-- Bulgarian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Catalan</masterLabel>
+            <translation><!-- Catalan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Croatian</masterLabel>
+            <translation><!-- Croatian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Czech</masterLabel>
+            <translation><!-- Czech --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Danish</masterLabel>
+            <translation><!-- Danish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deutsch</masterLabel>
+            <translation><!-- Deutsch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dutch</masterLabel>
+            <translation><!-- Dutch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation><!-- English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Español</masterLabel>
+            <translation><!-- Español --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Estonian</masterLabel>
+            <translation><!-- Estonian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finnish</masterLabel>
+            <translation><!-- Finnish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Français</masterLabel>
+            <translation><!-- Français --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hebrew</masterLabel>
+            <translation><!-- Hebrew --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hindi</masterLabel>
+            <translation><!-- Hindi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hungarian</masterLabel>
+            <translation><!-- Hungarian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Icelandic</masterLabel>
+            <translation><!-- Icelandic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italiano</masterLabel>
+            <translation><!-- Italiano --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Latvian</masterLabel>
+            <translation><!-- Latvian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lithuanian</masterLabel>
+            <translation><!-- Lithuanian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mecedonian</masterLabel>
+            <translation><!-- Mecedonian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Norwegian (Bokmal)</masterLabel>
+            <translation><!-- Norwegian (Bokmal) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Polski</masterLabel>
+            <translation><!-- Polski --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuguese (Portugal)</masterLabel>
+            <translation><!-- Portuguese (Portugal) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Português (Brasil)</masterLabel>
+            <translation><!-- Português (Brasil) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Romanian</masterLabel>
+            <translation><!-- Romanian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Serbian (Cyrillic)</masterLabel>
+            <translation><!-- Serbian (Cyrillic) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Serbian (Latin)</masterLabel>
+            <translation><!-- Serbian (Latin) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slovak</masterLabel>
+            <translation><!-- Slovak --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Slovenian</masterLabel>
+            <translation><!-- Slovenian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swedish</masterLabel>
+            <translation><!-- Swedish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thai</masterLabel>
+            <translation><!-- Thai --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Türkçe</masterLabel>
+            <translation><!-- Türkçe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ukrainian</masterLabel>
+            <translation><!-- Ukrainian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PrefixValue --></label>
+        <name>PrefixValue__c</name>
+        <picklistValues>
+            <masterLabel>Colonel</masterLabel>
+            <translation><!-- Colonel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Primary Postal Code Look Up --></label>
+        <name>Primary_Postal_Code_Look_Up__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Line --></label>
+        <name>Product_Line__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retail Dealer Name --></label>
+        <name>Retail_Dealer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retail Dealer --></label>
+        <name>Retail_dealer__c</name>
+        <relationshipLabel><!-- Retail dealer --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Secondary Email --></label>
+        <name>Secondary_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Dealer Name --></label>
+        <name>Service_Dealer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Dealer --></label>
+        <name>Service_dealer__c</name>
+        <relationshipLabel><!-- Service dealer --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Solicitation Indicator --></label>
+        <name>SolicitationIndicator__c</name>
+        <picklistValues>
+            <masterLabel>N</masterLabel>
+            <translation><!-- N --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y</masterLabel>
+            <translation><!-- Y --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SourceIdentifierValue --></label>
+        <name>SourceIdentifierValue__c</name>
+        <picklistValues>
+            <masterLabel>CANADAPOST</masterLabel>
+            <translation><!-- CANADAPOST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CASS</masterLabel>
+            <translation><!-- CASS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEALERMASTER</masterLabel>
+            <translation><!-- DEALERMASTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DEALERPOSTALCODE</masterLabel>
+            <translation><!-- DEALERPOSTALCODE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DMIRO</masterLabel>
+            <translation><!-- DMIRO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISKY</masterLabel>
+            <translation><!-- ISKY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MINACS</masterLabel>
+            <translation><!-- MINACS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MODELCATALOG</masterLabel>
+            <translation><!-- MODELCATALOG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MODELMASTER</masterLabel>
+            <translation><!-- MODELMASTER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MYACURAHOND</masterLabel>
+            <translation><!-- MYACURAHOND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RDR CRUPDATE</masterLabel>
+            <translation><!-- RDR CRUPDATE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RDR NAMEADDRCHG</masterLabel>
+            <translation><!-- RDR NAMEADDRCHG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RDR REGIST</masterLabel>
+            <translation><!-- RDR REGIST --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RDR RTNMAIL</masterLabel>
+            <translation><!-- RDR RTNMAIL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RDR TRANSFER</masterLabel>
+            <translation><!-- RDR TRANSFER --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RECALLCAMPAIGN</masterLabel>
+            <translation><!-- RECALLCAMPAIGN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALEFORCEDESK2</masterLabel>
+            <translation><!-- SALEFORCEDESK2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SALESFORCEEXACTTARGET</masterLabel>
+            <translation><!-- SALESFORCEEXACTTARGET --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TELEMATICS</masterLabel>
+            <translation><!-- TELEMATICS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UDC</masterLabel>
+            <translation><!-- UDC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WARRANTY</masterLabel>
+            <translation><!-- WARRANTY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ZONE</masterLabel>
+            <translation><!-- ZONE --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Split UCID --></label>
+        <name>Split_UCID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date Dealer --></label>
+        <name>Start_Date_Dealer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date Honda --></label>
+        <name>Start_Date_Honda__c</name>
+    </fields>
+    <fields>
+        <label><!-- Student ID --></label>
+        <name>Student_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Termination Date --></label>
+        <name>Termination_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- To Be Deleted --></label>
+        <name>ToBeDeleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- UCID --></label>
+        <name>UCID__c</name>
+    </fields>
+    <layouts>
+        <layout>Business Layout</layout>
+        <sections>
+            <label><!-- CRM Information --></label>
+            <section>CRM Information</section>
+        </sections>
+        <sections>
+            <label><!-- Key Information --></label>
+            <section>Key Information</section>
+        </sections>
+        <sections>
+            <label><!-- Privacy Preferences - Dealer --></label>
+            <section>Privacy Preferences - Dealer</section>
+        </sections>
+        <sections>
+            <label><!-- Privacy Preferences - Honda Canada --></label>
+            <section>Privacy Preferences - Honda Canada</section>
+        </sections>
+        <sections>
+            <label><!-- Privacy Preferences - Honda Financial Services --></label>
+            <section>Privacy Preferences - Honda Financial Services</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Business Layout (Tech Line)</layout>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer Layout</layout>
+        <sections>
+            <label><!-- CRM Information --></label>
+            <section>CRM Information</section>
+        </sections>
+        <sections>
+            <label><!-- Key Information --></label>
+            <section>Key Information</section>
+        </sections>
+        <sections>
+            <label><!-- Privacy Preferences - Dealer --></label>
+            <section>Privacy Preferences - Dealer</section>
+        </sections>
+        <sections>
+            <label><!-- Privacy Preferences - Honda Canada --></label>
+            <section>Privacy Preferences - Honda Canada</section>
+        </sections>
+        <sections>
+            <label><!-- Privacy Preferences - Honda Financial Services --></label>
+            <section>Privacy Preferences - Honda Financial Services</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer Layout (Tech Line)</layout>
+        <sections>
+            <label><!-- CRM Information --></label>
+            <section>CRM Information</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Customer --></label>
+        <name>Customer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Dealer Contact --></label>
+        <name>Dealer_Contact</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Business Customer --></label>
+        <name>Organization</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You do not have enough permissions to change the Account Name field (i.e. Household) --></errorMessage>
+        <name>Account_Name_cannot_be_changed_by_Agent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Certain customer details are not editable. --></errorMessage>
+        <name>Cannot_Edit_Customer_Contact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Dealer Contact details are not editable. --></errorMessage>
+        <name>Cannot_Edit_Dealer_Contact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- First Name is required for this record to be created --></errorMessage>
+        <name>First_Name_Required_to_Create_a_Contact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have enough permissions to change the First Name, Middle Name or Last Name --></errorMessage>
+        <name>Name_Cant_be_updated_Customer_Relations</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Acura_Dealer_Look_Up --></label>
+        <name>Acura_Dealer_Look_Up</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Honda_Dealer_Look_Up --></label>
+        <name>Honda_Dealer_Look_Up</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooWeather --></label>
+        <name>YahooWeather</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- CallToPhoneButton --></label>
+        <name>cnx__CallToPhoneButton</name>
+    </webLinks>
+</CustomObjectTranslation>

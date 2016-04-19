@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>CaseNumber</field>
+        <field>Owner</field>
+        <field>CreatedDate</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>true</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Collections_Recovery_Resol_Senior_Agents</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>Goodwill_Amount__c &gt; 150</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>GW - Collections - Dollar - Step 1</label>
+        <name>GW_Collections_Dollar_Step_1</name>
+    </approvalStep>
+    <description>This is the first step in the approval process. Subsequent ones will go through a ladder process.</description>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>(ISPICKVAL(Group__c, &quot;Collections&quot;) || ISPICKVAL(Group__c, &quot;Recovery Centre&quot;) || ISPICKVAL(Group__c, &quot;Resolution Centre&quot;)) 
+ &amp;&amp; ($UserRole.DeveloperName == &quot;Collections_Centre_Agent&quot; || $UserRole.DeveloperName == &quot;Recovery_Centre_Agent&quot; || $UserRole.DeveloperName == &quot;Resolution_Centre_Agent&quot;) 
+&amp;&amp; NOT(ISPICKVAL(Status, &quot;Closed&quot;) || ISPICKVAL(Status, &quot;Cancelled&quot;)) &amp;&amp; Goodwill_Amount__c &gt; 0 &amp;&amp; Goodwill_Amount__c &lt;= 500 &amp;&amp; ISPICKVAL(Category_Level_2__c, &quot;Dollar&quot;)</formula>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Change_Owner_to_Customer_Accounting</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Process_Approved</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Process_Declined</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Process_Pending</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>GW - Collections - Dollar</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>false</useApproverFieldOfRecordOwner>
+        <userHierarchyField>Manager</userHierarchyField>
+    </nextAutomatedApprover>
+    <recallActions>
+        <action>
+            <name>Process_Open</name>
+            <type>FieldUpdate</type>
+        </action>
+    </recallActions>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

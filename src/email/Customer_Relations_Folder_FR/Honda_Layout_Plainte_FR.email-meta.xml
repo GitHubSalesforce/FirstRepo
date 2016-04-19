@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Honda Layout - Plainte - FR</name>
+    <style>none</style>
+    <subject>Plainte</subject>
+    <textOnly>Plainte 
+
+Nous sommes vraiment désolés d’apprendre que vous avez connu une expérience négative. Merci d’avoir pris le temps de partager votre histoire avec nous. 
+
+Veuillez nous allouer deux jours ouvrables pour examiner vos commentaires et y répondre. Dans le cas où vous voudriez communiquer avec nous plus rapidement, veuillez nous téléphoner à l’aide de notre ligne sans frais au 1 888 9HONDA9. 
+
+Cordialement, 
+L’équipe des relations avec la clientèle
+
+************************************************************************ 
+
+Privacy Policy | Terms &amp; Conditions | Contact Us	
+ 
+This is a system email account, and unfortunately, replies to this email cannot be acknowledged. If you have any questions or comments please follow this Contact Us link.
+
+At Honda, we hold your personal information in strictest confidence, in accordance with federal and provincial guidelines. For further details on Honda&apos;s Customer Privacy Policy, please visit our Privacy Policy.
+
+You are receiving this email because you have asked us to notify you about Honda products and promotions. You are subscribed as [% member:email %]. To unsubscribe, please follow this Unsubscribe link.
+
+© {!YEAR(TODAY())} Honda Canada. 180 Honda Boulevard, Markham, ON, L6C 0H9, 1-888-946-6329
+
+All information contained herein applies to Canadian products only.</textOnly>
+    <type>custom</type>
+</EmailTemplate>

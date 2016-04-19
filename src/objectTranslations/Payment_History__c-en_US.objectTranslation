@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Payment History</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Payment Histories</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Balance Type --></label>
+        <name>Account_Balance_Type__c</name>
+        <picklistValues>
+            <masterLabel>Charge Off</masterLabel>
+            <translation><!-- Charge Off --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment</masterLabel>
+            <translation><!-- Payment --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Charge Off Amount --></label>
+        <name>Charge_Off_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Amount --></label>
+        <name>Payment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Record --></label>
+        <name>Payment_Record__c</name>
+        <relationshipLabel><!-- Payment Histories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Received Date --></label>
+        <name>Received_Date__c</name>
+    </fields>
+    <layouts>
+        <layout>Payment History Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You must enter payment amount or charge off amount --></errorMessage>
+        <name>Must_not_enter_both_payment_and_CO</name>
+    </validationRules>
+</CustomObjectTranslation>

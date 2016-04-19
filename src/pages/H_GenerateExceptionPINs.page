@@ -1,0 +1,77 @@
+<apex:page showHeader="true" sidebar="true" docType="html-5.0" controller="H_GenerateExceptionPINsController">
+	<style>
+		.campaignLabel {
+			font-size: 18px;
+			font-weight: bold;
+			
+		}
+
+		.spinner-background-div {
+			position: fixed; 
+			top: 0; 
+			left: 0; 
+			right: 0; 
+			bottom: 0; 
+			opacity: 0.25; 
+			z-index: 1000; 
+			background-color: black;
+		}
+
+		.spinner-div {
+			position: fixed; 
+			left: 0; 
+			top: 0; 
+			bottom: 0; 
+			right: 0; 
+			z-index: 1001; 
+			margin: 15% 50%;
+		}
+
+		.spinner-div-inside {
+			display: inline-block; 
+			padding: 2px; 
+			background-color: #fff; 
+			width: 125px;
+		}
+		.spinner-image {
+			float: left; 
+			margin: 8px;
+		}
+		.spinner-text {
+			display: inline-block; 
+			padding: 10px 0px;
+		}
+
+	</style>
+	
+	<apex:outputLabel id="campaignName" styleClass="campaignLabel" value="{!campaignDetails.Name}"/>
+	<br/>
+	<br/>
+	<apex:form id="form">
+		<apex:outputLabel id="numberOfPinsLbl" value="Number of PINs"/> :
+		<apex:input id="numberOfPins" value="{!numberOfPins}"/> &nbsp;
+		<apex:commandButton value="Generate PINs" action="{!generateExceptionPINs}" rerender="form" status="status"/>
+		<apex:actionStatus id="status">
+		    <apex:facet name="start">
+		    <div class="spinner-background-div">
+		        &nbsp;
+		    </div>
+		    <div class="spinner-div">
+		        <div class="spinner-div-inside">
+		            <img src="/img/loading.gif" class="spinner-image" />
+		            <span class="spinner-text">Please Wait...</span>
+		        </div>
+		    </div>
+		    </apex:facet>
+		</apex:actionStatus>
+
+		<br/>
+		<br/>
+
+		<apex:outputPanel layout="block" rendered="{!isPINsGenerated}">
+		{!numberOfPinsLabel} exception PIN(s) have been generated. Click <apex:outputLink value="/{!campaignId}">&nbsp;here</apex:outputLink> to go back to the Campaign. 
+		</apex:outputPanel>
+
+	</apex:form>
+	
+</apex:page>

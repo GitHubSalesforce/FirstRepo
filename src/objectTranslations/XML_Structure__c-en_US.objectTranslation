@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>XML Structure</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>XML Structure</value>
+    </caseValues>
+    <fields>
+        <label><!-- Create New Instance --></label>
+        <name>Create_New_Instance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mapped Object --></label>
+        <name>Mapped_Object__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mapped to Object Fields2 --></label>
+        <name>Mapped_to_Object_Fields2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mapped to Object Fields3 --></label>
+        <name>Mapped_to_Object_Fields3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mapped to Object Fields --></label>
+        <name>Mapped_to_Object_Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Multiple Children --></label>
+        <name>Multiple_Children__c</name>
+    </fields>
+    <fields>
+        <label><!-- SubTags2 --></label>
+        <name>SubTags2__c</name>
+    </fields>
+    <fields>
+        <label><!-- SubTags3 --></label>
+        <name>SubTags3__c</name>
+    </fields>
+    <fields>
+        <label><!-- SubTags --></label>
+        <name>SubTags__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
