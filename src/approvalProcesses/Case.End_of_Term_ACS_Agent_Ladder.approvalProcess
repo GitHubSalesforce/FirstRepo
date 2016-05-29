@@ -18,7 +18,7 @@
         <allowDelegate>true</allowDelegate>
         <approvalActions>
             <action>
-                <name>Process_Approved_RemoveThisLater</name>
+                <name>Process_Approved</name>
                 <type>FieldUpdate</type>
             </action>
         </approvalActions>
